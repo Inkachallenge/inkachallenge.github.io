@@ -1,0 +1,46 @@
+<header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+  <nav class="fixed top-0 left-4 right-5 bg-[#17234c] px-3 py-2 shadow-lg text-xl rounded-2xl z-50">
+        <!-- Logo: clic para ir al index,en Tailwind CSS significa h-10 = altura de 2.5 rem (40 píxeles) -->
+    <!-- Enlaces:Los enlaces no llevan a otras páginas, sino que se desplazan a secciones específicas dentro de la misma página (anclas). -->
+    <div class="flex items-center justify-between w-full">
+      <div class="flex items-center space-x-8">
+        <a href="index.html"><img src="../images/inkachallenge-logo.png" alt="Logo" class="h-16"></a>
+        
+        <a id="nav-about" href="about.html" class="text-[#fffade] hover:text-[#fab41a] transition">
+          <span>About</span>
+        </a>
+        <a id="nav-rules" href="regulations.html" class="text-[#fffade] hover:text-[#fab41a] transition">
+          <span>Regulations</span>
+        </a>
+        <a id="nav-invit" href="invitations.html" class="text-[#fffade] hover:text-[#fab41a] transition">
+          <span>Invitations</span>
+        </a>
+        <a id="nav-register" href="https://docs.google.com/forms/d/e/1FAIpQLSeP26fwcV5ZWC71HZFqm8QWnkWvVCFtDTgu71CHjlarNQ1iFQ/closedform" target="_blank" rel="noopener noreferrer" class="text-[#fffade] hover:text-[#fab41a] transition">
+          <span>Register</span>       
+         </a>
+        <a id="nav-contact" href="contact.html" class="text-[#fffade] hover:text-[#fab41a] transition">
+          <span>Contact us</span>
+        </a>
+      </div>
+ 
+      <!-- Botones de idioma -->
+      <div class="flex items-center space-x-4 ml-auto">
+        <img 
+          id="btn-es"
+          src="../images/icons/es-off.png" 
+          alt="Español" 
+          class="h-7 cursor-pointer" 
+          onclick="changeLanguage('es')"
+        />
+        <img 
+          id="btn-en"
+          src="../images/icons/en-on.png" 
+          alt="Inglés" 
+          class="h-7 cursor-pointer" 
+          onclick="changeLanguage('en')"
+        />
+      </div>
+
+    </div>
+  </nav>
+</header>

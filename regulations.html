@@ -1,0 +1,194 @@
+<html lang="preferredLanguage">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylesic.css">
+        <title>INKACHALLENGE 2025</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icon-ic4.png"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+
+        </style>
+      </head>
+      <body>
+      <div id="navbar-placeholder"></div>
+
+      <!-- Carga el JS de traducción ANTES del fetch -->
+      <script src="../js/language.js"></script>
+      
+      <script>
+        const savedLang = localStorage.getItem("preferredLanguage") || "en";
+      
+        // Cargar el navbar y traducirlo una vez que esté insertado
+        fetch('navbar-ic.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+      
+            // Esperar a que los elementos del navbar estén en el DOM
+            setTimeout(() => {
+              changeLanguage(savedLang); // <- Esto asegura que la función se aplique también al navbar
+            }, 0);
+          });
+      </script>
+      
+<!-- list of challenges -->
+<main class="max-w-6xl mx-auto px-4 py-24">
+  <div class="p-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <!-- when click, open the modal , format (name,content),class is 4 configuration and style of the btn -->
+
+      <button onclick="openModalFromKey('btn-velocista', 'content-velocista')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-lg font-semibold flex items-center space-x-2 px-6">
+        <!-- Contenedor del icono con tamaño fijo -->
+        <div  class="w-12 h-12 -ml-3">
+          <img src="../images/icons/linefollower-icon.png" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-velocista">Seguidor de Línea Velocista</span>
+      </button>
+
+      <button onclick="openModalFromKey('btn-enhanced', 'content-enhanced')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-lg font-semibold flex items-center space-x-2 px-6">
+        <div class="w-12 h-12 -ml-3">
+          <img src="../images/icons/enh-icon.png" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-enhanced">Seguidor de Línea Enhanced</span>
+      </button>
+
+      <button onclick="openModalFromKey('btn-turbo', 'content-turbo')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-xl font-semibold flex items-center space-x-2 px-6">
+        <div class="w-12 h-12 -ml-3">
+          <img src="../images/icons/turbo-icon.png" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-turbo">Seguidor de Línea Turbo</span>
+      </button>
+
+      <button onclick="openModalFromKey('btn-robotracer', 'content-robotracer')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-xl font-semibold flex items-center space-x-2 px-6">
+        <div class="w-12 h-12 -ml-3">
+          <img src="../images/icons/robotracer-icon.png" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-robotracer">Seguidor de Línea Nat-Car</span>
+      </button>     
+
+      <button onclick="openModalFromKey('btn-miniauto', 'content-miniauto')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-xl font-semibold flex items-center space-x-2 px-6">
+        <div class="w-12 h-12 -ml-3">
+          <img src="../images/icons/msumo-icon.png" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-miniauto">Minisumo Autónomo</span>
+      </button>
+
+      <button onclick="openModalFromKey('btn-minirc', 'content-minirc')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-xl font-semibold flex items-center space-x-2 px-6">
+        <div class="w-12 h-12 -ml-3">
+          <img src="../images/icons/mini-rc-icon.png" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-minirc">Minisumo Bluetooth/RC</span>
+      </button>
+
+      <button onclick="openModalFromKey('btn-microsumo', 'content-microsumo')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-xl font-semibold flex items-center space-x-2 px-6">
+        <div class="w-9 h-9 -ml-3">
+          <img src="../images/icons/msumo-icon.png" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-microsumo">Microsumo Autónomo</span>
+      </button>
+
+      <button onclick="openModalFromKey('btn-micromouse', 'content-micromouse')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-xl font-semibold flex items-center space-x-2 px-6">
+        <div class="w-12 h-12 -ml-3">
+          <img src="../images/icons/maze-icon.jpg" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-micromouse">Robot Micromouse</span>
+      </button>
+      <button onclick="openModalFromKey('btn-soccer', 'content-soccer')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-xl font-semibold flex items-center space-x-2 px-6">
+        <div class="w-12 h-12 -ml-3">
+          <img src="../images/icons/soccer-icon.png" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-soccer">Robot Soccer</span>
+      </button>
+      <button onclick="openModalFromKey('btn-combate', 'content-combate')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-xl font-semibold flex items-center space-x-2 px-6">
+        <div class="w-12 h-12 -ml-3">
+          <img src="../images/icons/combat-icon.png" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-combate">Combate de Robots</span>
+      </button>
+      <button onclick="openModalFromKey('btn-kungfu', 'content-kungfu')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-xl font-semibold flex items-center space-x-2 px-6">
+        <div class="w-12 h-12 -ml-3">
+          <img src="../images/icons/humanoid-icon.png" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-kungfu">Robot Kung-Fu</span>
+      </button>
+      <button onclick="openModalFromKey('btn-walking', 'content-walking')" class="w-full h-32 bg-gray-800 text-white rounded-xl text-left text-xl font-semibold flex items-center space-x-2 px-6">
+        <div class="w-12 h-12 -ml-3">
+          <img src="../images/icons/walking-icon.png" alt="Icono" class="w-full h-full object-contain">
+        </div>
+        <span id="btn-walking">Robot Walking-Race</span>
+      </button>
+
+      
+      
+    </div>
+  </div>
+</main>
+
+<!-- pop up window configuration -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 overflow-y-auto">
+  <div class="min-h-screen flex items-center justify-center px-4 py-10">
+    
+    <!-- blanck Modal window (centrado) -->
+    <div class="modal-content bg-white rounded-xl w-full max-w-4xl shadow-xl flex flex-col max-h-[90vh]">
+      <!-- Header -->
+      <div class="px-6 py-4 border-b">
+        <h2 id="modalTitle" class="text-2xl font-bold">Título</h2>
+      </div>
+
+      <!-- Content -->
+      <div id="modalContent" class="px-6 py-4 overflow-auto flex-1">
+        <!-- Aquí va el contenido dinámico, como un PDF, etc. -->
+      </div>
+
+      <!-- Footer -->
+      <div class="px-6 py-4 border-t">
+        <button class="close-modal px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-600">🗙</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- information 4 each challenge -->
+<!-- Velocista -------------------------------------------------- -->
+<div id="content-velocista" class="hidden"></div>
+<!-- Enhanced -------------------------------------------------- -->
+<div id="content-enhanced" class="hidden"></div>
+<!-- Turbo ---------------------------------------------------->
+<div id="content-turbo" class="hidden"></div>
+<!-- Robotracer ---------------------------------------------------->
+<div id="content-robotracer" class="hidden"></div>
+<!-- Minisumo Autónomo ---------------------------------------------------->
+<div id="content-miniauto" class="hidden"></div>
+<!-- Minisumo Bluetooth/RC ---------------------------------------------------->
+<div id="content-minirc" class="hidden"></div>
+<!-- Microsumo-------------------------------------------------- -->
+<div id="content-microsumo" class="hidden"></div>
+<!-- Micromouse-------------------------------------------------- -->
+<div id="content-micromouse" class="hidden"></div>
+<!-- Kung-Fu-------------------------------------------------- -->
+<div id="content-kungfu" class="hidden"></div>
+<!-- Combate de Robots-------------------------------------------------- -->
+<div id="content-combate" class="hidden"></div>
+<!-- Walking-Race-------------------------------------------------- -->
+<div id="content-walking" class="hidden"></div>
+<!-- Soccer-------------------------------------------------- -->
+<div id="content-soccer" class="hidden"></div>
+
+
+<!-- idioma -->
+<script src="js/language.js"></script>
+
+</body>
+
+      <footer class="text-white py-4 mt-4">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+          <p class="text-sm">INKACHALLENGE IV - Trujillo, Perú 2025</p>
+        </div>
+      </footer>
+  </html>
+
+  

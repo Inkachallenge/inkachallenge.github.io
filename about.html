@@ -1,0 +1,136 @@
+<html lang="preferredLanguage">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylesic.css">
+        <title>INKACHALLENGE 2025</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icon-ic4.png"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        </style>
+      </head>
+      <body>
+
+       <!-- NAVBAR -->
+<div id="navbar-placeholder"></div>
+
+<!-- Carga el JS de traducción ANTES del fetch -->
+<script src="../js/language.js"></script>
+
+<script>
+  const savedLang = localStorage.getItem("preferredLanguage") || "en";
+
+  // Cargar el navbar y traducirlo una vez que esté insertado
+  fetch('navbar-ic.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('navbar-placeholder').innerHTML = data;
+
+      // Esperar a que los elementos del navbar estén en el DOM
+      setTimeout(() => {
+        changeLanguage(savedLang); // <- Esto asegura que la función se aplique también al navbar
+      }, 0);
+    });
+</script>
+
+
+  <section class="flex flex-col md:flex-row items-center gap-4 px-8 py-12 mt-20 max-w-8xl mx-auto">
+    
+    <!-- Imagen -->
+    <div class="flex justify-center md:justify-start w-full md:w-2/5">
+      <img id="logo-ic" src="../images/icons/icon-ic4.png" alt="INKACHALLENGE 2025" 
+           class="w-full max-w-md md:max-w-lg rounded-2xl shadow-2xl">
+    </div>
+    
+        <!-- Texto -->
+        <div class="w-full md:w-1/2 space-y-6">
+          <h1 id="first-title" class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">INKACHALLENGE IV Edición CONEIMERA 2025</h1>
+    
+          <p id="text1" class="text-[#fffade] text-justify leading-relaxed text-lg"></p>
+
+          <p id="text2" class="text-[#fffade] text-justify leading-relaxed text-lg"></p>
+    
+          
+          <div class="mt-4 text-center text-xl text-[#fffade] flex flex-col items-center gap-4">
+      
+            <!-- Lugar -->
+            <div id="venue" class="flex items-center gap-2"></div>
+            
+            <!-- Fecha -->
+            <div id="date" class="flex items-center gap-2"></div>
+          </div>
+        </div>
+  </section>
+  
+<section class="max-w-6xl mx-auto px-4 py-2">
+  <h2 id="second-title" class="text-3xl font-bold text-center mt-2 mb-8 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Ediciones Previas</h2>
+
+  <div class="relative border-l-4 border-yellow-400 ml-8">
+
+    <!-- SITEM 2017 -->
+    <div class="mb-12 ml-6 relative">
+      <!-- Círculo -->
+      <span class="absolute -left-10 top-2 w-6 h-6 bg-yellow-400 rounded-full border-4 border-white"></span>
+      <!-- Año -->
+      <span class="absolute -left-24 top-1 text-yellow-300 font-semibold">2017</span>
+  
+      <div class="flex items-start gap-6">
+        <img src="../images/editions/sitem.jpg" alt="SITEM 2017" class="w-24 h-24 object-cover rounded-lg shadow-lg">
+        <div>
+          <h3 id="zero-ic" class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent text-2xl mb-2">SITEM 2017</h3>
+          <p id="zero-desc" class="text-justify text-[#fffade] text-base leading-relaxed"></p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- InkaChallenge 2018 -->
+    <div class="mb-12 ml-6 relative">
+      <span class="absolute -left-10 top-2 w-6 h-6 bg-yellow-400 rounded-full border-4 border-white"></span>
+      <span class="absolute -left-24 top-1 text-yellow-300 font-semibold">2018</span>
+  
+      <div class="flex items-start gap-6">
+        <img src="../images/editions/ic2018.png" alt="InkaChallenge I" class="w-24 h-24 object-cover rounded-lg shadow-lg">
+        <div>
+          <h3 id="first-ic" class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent text-2xl mb-2">InkaChallenge I</h3>
+          <p id="first-desc" class="text-justify text-[#fffade] text-base leading-relaxed"></p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- InkaChallenge 2023 -->
+    <div class="mb-12 ml-6 relative">
+      <span class="absolute -left-10 top-2 w-6 h-6 bg-yellow-400 rounded-full border-4 border-white"></span>
+      <span class="absolute -left-24 top-1 text-yellow-300 font-semibold">2023</span>
+  
+      <div class="flex items-start gap-6">
+        <img src="../images/editions/ic2023.jpg" alt="InkaChallenge II" class="w-24 h-24 object-cover rounded-lg shadow-lg">
+        <div>
+          <h3 id="second-ic" class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent text-2xl mb-2">InkaChallenge II</h3>
+          <p id="second-desc" class="text-justify text-[#fffade] text-base leading-relaxed"></p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- InkaChallenge 2024 -->
+    <div class="mb-12 ml-6 relative">
+      <span class="absolute -left-10 top-2 w-6 h-6 bg-yellow-400 rounded-full border-4 border-white"></span>
+      <span class="absolute -left-24 top-1 text-yellow-300 font-semibold">2024</span>
+  
+      <div class="flex items-start gap-6">
+        <img src="../images/editions/ic2024.jpg" alt="InkaChallenge III" class="w-24 h-24 object-cover rounded-lg shadow-lg">
+        <div>
+          <h3 id="third-ic" class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent text-2xl mb-2">InkaChallenge III</h3>
+          <p id="third-desc" class="text-justify text-[#fffade] text-base leading-relaxed"></p>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+</section>
+
+<!-- idioma -->
+<script src="js/language.js"></script>  
+
+      </body>
+  </html>

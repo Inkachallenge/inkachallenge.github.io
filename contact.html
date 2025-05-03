@@ -1,0 +1,89 @@
+<html lang="preferredLanguage">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylesic.css">
+        <title>INKACHALLENGE 2025</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icon-ic4.png"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+
+      
+        </style>
+      </head>
+      <body>
+      <div id="navbar-placeholder"></div>
+
+      <!-- Carga el JS de traducción ANTES del fetch -->
+      <script src="../js/language.js"></script>
+      
+      <script>
+        const savedLang = localStorage.getItem("preferredLanguage") || "en";
+      
+        // Cargar el navbar y traducirlo una vez que esté insertado
+        fetch('navbar-ic.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+      
+            // Esperar a que los elementos del navbar estén en el DOM
+            setTimeout(() => {
+              changeLanguage(savedLang); // <- Esto asegura que la función se aplique también al navbar
+            }, 0);
+          });
+      </script>
+
+<main class="max-w-6xl mx-auto px-4 py-20">
+  <div class="flex items-top mb-5 ml-16 mr-16">
+
+    <div class="container mx-auto p-8">
+      <!-- Mensaje de contacto -->
+      <div class="text-center mt-20">
+        <h2 id="contact-title" class="text-white text-4xl font-bold">¿Tienes alguna consulta?</h2>
+        <p id="contact-desc" class="text-white text-xl mt-4">No dudes en escribirnos al correo electrónico para cualquier duda o pregunta. </p>
+      </div>
+
+      <!-- Correo Gmail -->
+      <div class="text-center mb-8 mt-8">
+        <div class="flex justify-center items-center space-x-3">
+          <img src="../images/icons/gmail.png" alt="Gmail" class="w-10 h-10">
+          <p class="text-2xl"><a href="mailto:robotronics@unitru.edu.pe" class="text-blue-500 hover:text-blue-700">robotronics@unitru.edu.pe</a></p>
+        </div>
+      </div>
+
+
+      <!-- mensaje para redes -->
+      <div class="text-center mt-16">
+  
+        <p id="contact-redes" class="text-white text-xl mt-4">También puedes seguir nuestras redes sociales para conocer más novedades sobre Inkachallenge IV - Edición CONEIMERA, ¡Nos vemos en Trujillo!</p>
+      </div>
+
+
+      <!-- Redes Sociales -->
+      <div class="flex justify-center space-x-8 mt-12">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/inkachallengeII/" target="_blank" class="flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+          <img src="../images/icons/facebook.png" alt="Facebook" class="w-8 h-8">
+          <span>Inkachallenge</span>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/inkachallenge.pe/" target="_blank" class="flex items-center space-x-2 text-pink-500 hover:text-pink-700">
+          <img src="../images/icons/instagram.png" alt="Instagram" class="w-8 h-8">
+          <span>inkachallenge.pe</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+<!-- idioma -->
+<script src="js/language.js"></script>
+
+      </body>
+  <footer class="text-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-sm">INKACHALLENGE IV - Trujillo, Perú 2025</p>
+    </div>
+  </footer>
+  </html>

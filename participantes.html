@@ -1,0 +1,29 @@
+<html lang="es">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylesic.css">
+        <title>INKACHALLENGE 2025</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icon-ic4.png"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+           body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+      
+        </style>
+      </head>
+      <body>
+        <div id="navbar-placeholder"></div>
+        <script>
+          fetch('navbar-ic.html')
+            .then(res => res.text())
+            .then(data => {
+              document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+        </script>
+      
+  
+      </body>
+  </html>
