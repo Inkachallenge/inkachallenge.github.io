@@ -12,21 +12,21 @@ body {
   
 @font-face {
     font-family: 'Lexend-SB';
-    src: url('../fonts/Lexend-SemiBold.ttf') format('truetype');
+    src: url('fonts/Lexend-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lexend-Light';
-    src: url('../fonts/Lexend-Light.ttf') format('truetype');
+    src: url('fonts/Lexend-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Bahnschrift';
-    src: url('../fonts/Bahnschrift') format('truetype');
+    src: url('fonts/Bahnschrift') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
