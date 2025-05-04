@@ -9,13 +9,13 @@ const translations = {
     "nav-register": "Registro",
     "nav-contact": "Contáctanos",
     //About.html
-    "logo-ic":"../images/icons/icon-ic4-es.png",
+    "logo-ic":"images/icons/icon-ic4-es.png",
     "first-title": "INKACHALLENGE IV Edición CONEIMERA 2025",
     "text1": "<b>INKACHALLENGE</b> es una competencia de robótica desarrollada en la ciudad de Trujillo - Perú, organizada por el club de robótica <b>Robotronics UNT</b>. Desde su primera edición en 2018, reúne a universitarios, makers, profesionales y apasionados por la robótica, provenientes de universidades y equipos independientes de todo el país. Todos ellos compiten en diversas categorías de robótica móvil que desafían sus habilidades técnicas, su estrategia y su capacidad de trabajo en equipo, convirtiendo a este evento en una de las competencias más importantes del Perú.", 
     "text2": "Esta edición es un evento oficial de la Liga Nacional de Robótica de Competencia 2025 (Perú), y se desarrollará en colaboración con el Congreso Nacional y Exposición Internacional de Ingeniería Mecánica, Mecatrónica, Eléctrica, Electrónica y Ramas Afines (XXXI CONEIMERA), con el apoyo y respaldo de Let's Go Robot.",
     "venue": `
       <div id="venue" class="flex items-center gap-2">
-        <img src="../images/icons/location.png" alt="Ubicación" class="w-6 h-6">
+        <img src="images/icons/location.png" alt="Ubicación" class="w-6 h-6">
         <span>
           Lugar: 
           <a href="https://maps.google.com/?q=Universidad+Nacional+de+Trujillo" target="_blank" class="text-yellow-400 hover:underline hover:text-orange-400 transition">
@@ -50,7 +50,7 @@ const translations = {
     "content-velocista":`
     <div class="modal-content">
       <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-        <img src="../images/linefollower.png" alt="Seguidor de línea velocista" class="rounded-xl shadow-lg w-[320px] h-auto">
+        <img src="images/linefollower.png" alt="Seguidor de línea velocista" class="rounded-xl shadow-lg w-[320px] h-auto">
         <!-- text 2 the right -->
         <div>
           <p class="text-justify mb-4 text-lg">Los seguidores de línea velocistas están diseñados para recorrer
@@ -70,14 +70,14 @@ const translations = {
 
       <!-- PDF incrustado con scroll -->
       <div class="mt-6" style="max-height: 400px;">
-        <embed src="../regulations/Seguidor de Linea Velocista - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+        <embed src="regulations/Seguidor de Linea Velocista - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
       </div>
     </div>
     `,
     "content-enhanced":`
     <div class="modal-content">
       <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-        <img src="../images/enhanced.jpg" alt="Seguidor de línea enhanced" class="rounded-xl shadow-lg w-[350px] h-auto">
+        <img src="images/enhanced.jpg" alt="Seguidor de línea enhanced" class="rounded-xl shadow-lg w-[350px] h-auto">
         <!-- text to the right -->
         <div>
           <p class="text-justify mb-4 text-lg">Esta categoría se basa en el seguidor
@@ -100,7 +100,7 @@ const translations = {
         </div>
         <!-- Imagen + pie de imagen -->
         <div class="flex flex-col items-center md:items-start mt-12">
-          <img src="../images/seesaw.png" alt="Balancín" class="rounded-xl shadow-lg w-[300px] h-auto self-center">
+          <img src="images/seesaw.png" alt="Balancín" class="rounded-xl shadow-lg w-[300px] h-auto self-center">
           <p class="text-sm text-gray-600 italic">Representación del balancín.</p>
         </div>
       </div>
@@ -108,14 +108,14 @@ const translations = {
       <p class="mt-4 mb-4 text-lg">Reglamento Oficial IV InkaChallege Edición Coneimera para la categoría<b> Seguidor de Línea Enhanced</b>:</p>
 
       <div class="mt-6" style="max-height: 400px;">
-        <embed src="../regulations/Seguidor de Linea Enhanced - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+        <embed src="regulations/Seguidor de Linea Enhanced - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
       </div>
     </div>
     `,
     "content-turbo":`
     <div class="modal-content">
     <div class="flex items-center space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/turbo.jpg" alt="Seguidor de línea Turbo" class="rounded-xl shadow-lg w-[250px] h-auto">
+      <img src="images/turbo.jpg" alt="Seguidor de línea Turbo" class="rounded-xl shadow-lg w-[250px] h-auto">
       <!-- text 2 the right -->
       <div>
         <p class="text-justify mb-4 text-lg"> 
@@ -140,21 +140,21 @@ const translations = {
       </div>
 
       <div class="flex flex-col items-center md:items-start">
-        <img src="../images/loop.png" alt="Bucle" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
+        <img src="images/loop.png" alt="Bucle" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
         <p class="text-sm text-gray-600 italic mt-2">Representación del bucle.</p>
       </div>
     </div>
 
         <p class="mt-4 mb-4 text-lg">Reglamento Oficial IV InkaChallege Edición Coneimera para la categoría<b> Seguidor de Línea Turbo</b>:</p>
         <div class="mt-6" style="max-height: 400px;">
-          <embed src="../regulations/Seguidor de Linea Turbo - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+          <embed src="regulations/Seguidor de Linea Turbo - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
         </div>
     </div>
     `,
     "content-robotracer":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/robotracer.png" alt="Robotracer" class="rounded-xl shadow-lg w-[270px] h-auto">
+      <img src="images/robotracer.png" alt="Robotracer" class="rounded-xl shadow-lg w-[270px] h-auto">
       <!-- text 2 the right -->
       <div>
         <p class="text-justify mb-4 text-lg">Seguidor de Línea Nat-car, también conocido como RobotRacer, es una categoría de 
@@ -179,7 +179,7 @@ const translations = {
       </div>
     
       <div class="flex flex-col items-center md:items-start">
-        <img src="../images/robotracer-rules-es.png" alt="Bucle" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
+        <img src="images/robotracer-rules-es.png" alt="Bucle" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
         <p class="text-sm text-gray-600 italic mt-2">Representación de los marcadores en el recorrido.</p>
       </div>
     </div>
@@ -187,14 +187,14 @@ const translations = {
     <p class="mt-4 mb-4 text-lg">Reglamento Oficial IV InkaChallege Edición Coneimera para la categoría<b> Seguidor de Línea Nat-car/Robotracer</b>:</p>
 
       <div class="mt-6" style="max-height: 400px;">
-        <embed src="../regulations/Seguidor de Linea NatCar - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+        <embed src="regulations/Seguidor de Linea NatCar - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
       </div>
     </div>
     `,
     "content-miniauto":`
     <div class="modal-content">
       <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-        <img src="../images/minisumo.jpg" alt="Minisumo" class="rounded-xl shadow-lg w-[320px] h-auto">
+        <img src="images/minisumo.jpg" alt="Minisumo" class="rounded-xl shadow-lg w-[320px] h-auto">
           <div>
             <p class="text-justify mb-4 text-lg">Minisumo autónomo es una categoría originada en Japón, 
               inspirada en el sumo tradicional.<br> Estos robots funciona sin control remoto, utilizando sensores
@@ -212,14 +212,14 @@ const translations = {
         <p class="mt-8 mb-4 text-lg">Reglamento Oficial IV InkaChallege Edición Coneimera para la categoría<b> Minisumo Autónomo</b>:</p>
 
       <div class="mt-6" style="max-height: 400px;">
-        <embed src="../regulations/MiniSumo Autónomo - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+        <embed src="regulations/MiniSumo Autónomo - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
       </div>
     </div>
     `,
     "content-minirc":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/minirc.jpg" alt="Minisumo RC" class="rounded-xl shadow-lg w-[290px] h-auto">
+      <img src="images/minirc.jpg" alt="Minisumo RC" class="rounded-xl shadow-lg w-[290px] h-auto">
       <div>
           <p class="text-justify mb-4 text-lg">El Minisumo RC es una categoría de competencia en la que los robots, 
             controlados de manera inalámbrica, deben detectar y empujar a su oponente fuera del dojo. A diferencia 
@@ -238,14 +238,14 @@ const translations = {
     <p class="mt-4 mb-4 text-lg">Reglamento Oficial IV InkaChallege Edición Coneimera para la categoría<b> Minisumo Bluetooth/RC</b>:</p>
 
     <div class="mt-6" style="max-height: 400px;">
-      <embed src="../regulations/MiniSumo Bluetooth-RC - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+      <embed src="regulations/MiniSumo Bluetooth-RC - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
     </div>
   </div>
     `,
     "content-microsumo":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/microsumo.png" alt="Microsumo" class="rounded-xl shadow-lg w-[280px] h-auto">
+      <img src="images/microsumo.png" alt="Microsumo" class="rounded-xl shadow-lg w-[280px] h-auto">
       <!-- text 2 the right -->
       <div>
         <p class="text-justify mb-4 text-lg">Esta es una categoría de competencia en la que 
@@ -261,14 +261,14 @@ const translations = {
 
 
     <div class="mt-6" style="max-height: 400px;">
-      <embed src="../regulations/MicroSumo Autónomo - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+      <embed src="regulations/MicroSumo Autónomo - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
       </div>
     </div>
     `,
     "content-micromouse":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/micromouse.jpg" alt="Micromouse" class="rounded-xl shadow-lg w-[320px] h-auto">
+      <img src="images/micromouse.jpg" alt="Micromouse" class="rounded-xl shadow-lg w-[320px] h-auto">
       <!-- text 2 the right -->
       <div>
         <p class="text-justify mb-4 text-lg">Micromouse, también conocida como Maze, es la categoría más 
@@ -282,14 +282,14 @@ const translations = {
     <p class="mt-4 mb-4 text-lg">Reglamento Oficial IV InkaChallege Edición Coneimera para la categoría<b> Micromouse</b>:</p>
 
       <div class="mt-6" style="max-height: 400px;">
-        <embed src="../regulations/Robot MicroMouse - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+        <embed src="regulations/Robot MicroMouse - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
       </div>
     </div>
     `,
     "content-kungfu":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/kung-fu.jpg" alt="Robot Kung Fu" class="rounded-xl shadow-lg w-[320px] h-auto">
+      <img src="images/kung-fu.jpg" alt="Robot Kung Fu" class="rounded-xl shadow-lg w-[320px] h-auto">
       <!-- text 2 the right -->
       <div>
         <p class="text-justify mb-4 text-lg"></p>Robot Kung-Fu es una competencia de destreza donde robots humanoides
@@ -306,14 +306,14 @@ const translations = {
 
 
     <div class="mt-6" style="max-height: 400px;">
-      <embed src="../regulations/Robot Kung-Fu - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+      <embed src="regulations/Robot Kung-Fu - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
     </div>
   </div>
     `,
     "content-combate":`
       <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/combat.jpg" alt="Robot de combate" class="rounded-xl shadow-lg w-[320px] h-auto">
+      <img src="images/combat.jpg" alt="Robot de combate" class="rounded-xl shadow-lg w-[320px] h-auto">
             <!-- text 2 the right -->
             <div>
               <p class="text-justify mb-4 text-lg">Un Robot de Combate es un robot móvil controlado de forma 
@@ -332,14 +332,14 @@ const translations = {
     <p class="mt-12 mb-4 text-lg">Conoce más en el reglamento Oficial IV InkaChallege Edición Coneimera para la categoría<b> Robot de combate</b>:</p>
 
     <div class="mt-6" style="max-height: 400px;">
-      <embed src="../regulations/Combate de Robots - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+      <embed src="regulations/Combate de Robots - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
     </div>
   </div>
     `,
     "content-walking":`
      <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/walking.png" alt="Walking-Race" class="rounded-xl shadow-lg w-[320px] h-auto">
+      <img src="images/walking.png" alt="Walking-Race" class="rounded-xl shadow-lg w-[320px] h-auto">
       <!-- text 2 the right -->
       <div>
         <p class="text-justify mb-4 text-lg">Robot Walking Race es una competencia donde robots bípedos 
@@ -357,14 +357,14 @@ const translations = {
 
 
     <div class="mt-6" style="max-height: 400px;">
-      <embed src="../regulations/Robot Walking-Race - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+      <embed src="regulations/Robot Walking-Race - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
     </div>
   </div>
     `,
     "content-soccer":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/soccer.png" alt="Robot soccer" class="rounded-xl shadow-lg w-[240px] h-auto">
+      <img src="images/soccer.png" alt="Robot soccer" class="rounded-xl shadow-lg w-[240px] h-auto">
       <!-- text 2 the right -->
       <div>
         <p class="text-justify mb-4 text-lg">Robot Soccer Bluetooth/RC es una competencia donde robots 
@@ -390,7 +390,7 @@ const translations = {
       </div>
     
       <div class="flex flex-col items-center md:items-start">
-        <img src="../images/soccer-field.png" alt="Bucle" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
+        <img src="images/soccer-field.png" alt="Bucle" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
         <p class="text-sm text-gray-600 italic mt-2">Medidas de la cancha de soccer.</p>
       </div>
     </div>
@@ -399,7 +399,7 @@ const translations = {
 
 
     <div class="mt-6" style="max-height: 400px;">
-      <embed src="../regulations/Robot Soccer - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+      <embed src="regulations/Robot Soccer - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
     </div>
   </div>
     `,
@@ -432,13 +432,13 @@ const translations = {
     "nav-register": "Register",
     "nav-contact": "Contact us",
     //About.html
-    "logo-ic":"../images/icons/icon-ic4-en.png",
+    "logo-ic":"images/icons/icon-ic4-en.png",
     "first-title": "INKACHALLENGE IV CONEIMERA 2025 Edition",
     "text1": "<b>INKACHALLENGE</b> is a robotics competition held in the city of Trujillo - Peru, organised by the robotics club <b>Robotronics UNT</b>. Since its first edition in 2018, it brings together university students, makers, professionals and passionate about robotics, from universities and independent teams from all over the country. All of them compete in various challenges of mobile robotics that challenge their technical skills, strategy and teamwork, making this event one of the most important competitions in Peru.", 
     "text2": "This edition is an official event of the National Robotics Competition League 2025 (Peru), and will be developed in collaboration with the National Congress and International Exhibition of Mechanical, Mechatronic, Electrical, Electronic Engineering and Related Branches (XXXI CONEIMERA), with the support and backing of Let's Go Robot.",
     "venue": `
       <div id="venue" class="flex items-center gap-2">
-        <img src="../images/icons/location.png" alt="Ubicación" class="w-6 h-6">
+        <img src="images/icons/location.png" alt="Ubicación" class="w-6 h-6">
         <span>
           Venue: 
           <a href="https://maps.google.com/?q=Universidad+Nacional+de+Trujillo" target="_blank" class="text-yellow-400 hover:underline hover:text-orange-400 transition">
@@ -473,7 +473,7 @@ const translations = {
     "content-velocista":`
       <div class="modal-content">
       <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-        <img src="../images/linefollower.png" alt="Seguidor de línea velocista" class="rounded-xl shadow-lg w-[320px] h-auto">
+        <img src="images/linefollower.png" alt="Seguidor de línea velocista" class="rounded-xl shadow-lg w-[320px] h-auto">
         <!-- text 2 the right -->
         <div>
           <p class="text-justify mb-4 text-lg">Line follower robots are designed to run around the track at maximum speed, precisely 
@@ -491,14 +491,14 @@ const translations = {
 
       <!-- PDF incrustado con scroll -->
       <div class="mt-6" style="max-height: 400px;">
-        <embed src="../regulations/Seguidor de Linea Velocista - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+        <embed src="regulations/Seguidor de Linea Velocista - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
       </div>
     </div>
     `,
     "content-enhanced":`
     <div class="modal-content">
       <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-        <img src="../images/enhanced.jpg" alt="Seguidor de línea enhanced" class="rounded-xl shadow-lg w-[350px] h-auto">
+        <img src="images/enhanced.jpg" alt="Seguidor de línea enhanced" class="rounded-xl shadow-lg w-[350px] h-auto">
         <!-- text to the right -->
         <div>
           <p class="text-justify mb-4 text-lg">This challenge is based on the classic linefollower, but incorporates physical obstacles that significantly increase the complexity.
@@ -519,7 +519,7 @@ const translations = {
         </div>
         <!-- Imagen + pie de imagen -->
         <div class="flex flex-col items-center md:items-start mt-12">
-          <img src="../images/seesaw.png" alt="Seesaw" class="rounded-xl shadow-lg w-[300px] h-auto self-center">
+          <img src="images/seesaw.png" alt="Seesaw" class="rounded-xl shadow-lg w-[300px] h-auto self-center">
           <p class="text-sm text-gray-600 italic">Seesaw representation.</p>
         </div>
       </div>
@@ -527,14 +527,14 @@ const translations = {
       <p class="mt-4 mb-4 text-lg">Official Rules IV InkaChallege Coneimera Edition for the challenge<b> Line Follower Enhanced</b>:</p>
 
       <div class="mt-6" style="max-height: 400px;">
-        <embed src="../regulations/Seguidor de Linea Enhanced - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+        <embed src="regulations/Seguidor de Linea Enhanced - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
       </div>
     </div>
     `,
     "content-turbo":`
     <div class="modal-content">
       <div class="flex items-center space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/turbo.jpg" alt="Linefollower Turbo" class="rounded-xl shadow-lg w-[250px] h-auto">
+      <img src="images/turbo.jpg" alt="Linefollower Turbo" class="rounded-xl shadow-lg w-[250px] h-auto">
       <! -- text 2 the right -->
       <div>
       <p class="text-justify mb-4 text-lg"> 
@@ -559,21 +559,21 @@ const translations = {
       </div>
 
         <div class="flex flex-col items-center md:items-start">
-      <img src="../images/loop.png" alt="Loop" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
+      <img src="images/loop.png" alt="Loop" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
       <p class="text-sm text-gray-600 italic mt-2">Representation of the loop.</p>
       </div>
       </div>
 
           <p class="mt-4 mb-4 text-lg">Official IV InkaChallege Coneimera Edition Regulations for the challenge<b> Linefollower Turbo</b>:</p>
       <div class="mt-6" style="max-height: 400px;">
-      <embed src="../regulations/Seguidor de Linea Turbo - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+      <embed src="regulations/Seguidor de Linea Turbo - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
       </div>
       </div> </div>
     `,
     "content-robotracer":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-    <img src="../images/robotracer.png" alt="Robotracer" class="rounded-xl shadow-lg w-[270px] h-auto">
+    <img src="images/robotracer.png" alt="Robotracer" class="rounded-xl shadow-lg w-[270px] h-auto">
     <! -- text 2 the right -->
     <div>
     <p class="text-justify mb-4 text-lg">RobotRacer, is a robotics competition challenge originating from Japan. <br>
@@ -597,7 +597,7 @@ const translations = {
     </div>
         
           <div class="flex flex-col items-center md:items-start">
-    <img src="../images/robotracer-rules-en.png" alt="Loop" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
+    <img src="images/robotracer-rules-en.png" alt="Loop" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
     <p class="text-sm text-gray-600 italic mt-2">Representation of markers on the course.</p>
     </div>
     </div> </div>
@@ -605,13 +605,13 @@ const translations = {
         <p class="mt-4 mb-4 text-lg">Official Rules IV InkaChallege Coneimera Edition for the challenge<b> Nat-car/Robotracer Line Follower</b>:</p>
 
           <div class="mt-6" style="max-height: 400px;">
-    <embed src="../regulations/Seguidor de Linea NatCar - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+    <embed src="regulations/Seguidor de Linea NatCar - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
     </div>
     `,
     "content-miniauto":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-    <img src="../images/minisumo.jpg" alt="Minisumo" class="rounded-xl shadow-lg w-[320px] h-auto">
+    <img src="images/minisumo.jpg" alt="Minisumo" class="rounded-xl shadow-lg w-[320px] h-auto">
     <div>
     <p class="text-justify mb-4 text-lg">Autonomous minisumo is a category originating in Japan, 
     inspired by traditional sumo. <br> These robots work without remote control, using sensors
@@ -629,14 +629,14 @@ const translations = {
     <p class="mt-8 mb-4 text-lg">Official Rules IV InkaChallege Coneimera Edition for the category <b>Autonomous Minisumo</b>:</p>
 
           <div class="mt-6" style="max-height: 400px;">
-    <embed src="../regulations/MiniSumo Autónomo - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+    <embed src="regulations/MiniSumo Autónomo - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
     </div>
     </div>
     `,
     "content-minirc":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-    <img src="../images/minirc.jpg" alt="Minisumo RC" class="rounded-xl shadow-lg w-[290px] h-auto">
+    <img src="images/minirc.jpg" alt="Minisumo RC" class="rounded-xl shadow-lg w-[290px] h-auto">
     <div>
     <p class="text-justify mb-4 text-lg">Minisumo RC is a competition category in which robots, 
     controlled wirelessly, must detect and push their opponent out of the dojo. Unlike 
@@ -655,14 +655,14 @@ const translations = {
     <p class="mt-4 mb-4 text-lg">Official Rules IV InkaChallege Coneimera Edition for the category<b> Bluetooth/RC Minisumo</b>:</p>
 
         <div class="mt-6" style="max-height: 400px;">
-    <embed src="../regulations/MiniSumo Bluetooth-RC - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+    <embed src="regulations/MiniSumo Bluetooth-RC - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
     </div>
     </div>
     `,
     "content-microsumo":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-    <img src="../images/microsumo.png" alt="Microsumo" class="rounded-xl shadow-lg w-[280px] h-auto">
+    <img src="images/microsumo.png" alt="Microsumo" class="rounded-xl shadow-lg w-[280px] h-auto">
     <! -- text 2 the right -->
     <div>
     <p class="text-justify mb-4 text-lg">This is a competition category in which 
@@ -678,14 +678,14 @@ const translations = {
 
 
         <div class="mt-6" style="max-height: 400px;">
-    <embed src="../regulations/MicroSumo Autónomo - Reglamento Oficial IV InkaChallege Edición Coneimera" width="100%" height="500px" type="application/pdf">
+    <embed src="regulations/MicroSumo Autónomo - Reglamento Oficial IV InkaChallege Edición Coneimera" width="100%" height="500px" type="application/pdf">
     </div>
     </div>
     `,
     "content-micromouse":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-    <img src="../images/micromouse.jpg" alt="Micromouse" class="rounded-xl shadow-lg w-[320px] h-auto">
+    <img src="images/micromouse.jpg" alt="Micromouse" class="rounded-xl shadow-lg w-[320px] h-auto">
     <!-- text 2 the right -->
     <div>
     <p class="text-justify mb-4 text-lg">Micromouse, also known as Maze, is the oldest category 
@@ -699,14 +699,14 @@ const translations = {
         <p class="mt-4 mb-4 text-lg">Official Rules IV InkaChallege Coneimera Edition for the <b>Micromouse</b> challenge:</p>
 
           <div class="mt-6" style="max-height: 400px;">
-    <embed src="../regulations/Robot MicroMouse - Reglamento Oficial IV InkaChallege Edición Coneimera" width="100%" height="500px" type="application/pdf">
+    <embed src="regulations/Robot MicroMouse - Reglamento Oficial IV InkaChallege Edición Coneimera" width="100%" height="500px" type="application/pdf">
     </div>
     </div>
     `,
     "content-kungfu":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-    <img src="../images/kung-fu.jpg" alt="Robot Kung Fu" class="rounded-xl shadow-lg w-[320px] h-auto">
+    <img src="images/kung-fu.jpg" alt="Robot Kung Fu" class="rounded-xl shadow-lg w-[320px] h-auto">
     <! -- text 2 the right -->
     <div>
     <p class="text-justify mb-4 text-lg"></p>Robot Kung Fu is a skill competition where humanoid robots face off in non-destructive combat, simulating human movements using upper and lower limbs. <br>
@@ -719,14 +719,14 @@ const translations = {
 
 
               <div class="mt-6" style="max-height: 400px;">
-          <embed src="../regulations/Robot Kung-Fu - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+          <embed src="regulations/Robot Kung-Fu - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
           </div>
         </div>
     `,
     "content-combate":`
       <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/combat.jpg" alt="Robot de combate" class="rounded-xl shadow-lg w-[320px] h-auto">
+      <img src="images/combat.jpg" alt="Robot de combate" class="rounded-xl shadow-lg w-[320px] h-auto">
             <!-- text 2 the right -->
             <div>
               <p class="text-justify mb-4 text-lg">A Combat Robot is a wirelessly controlled mobile robot designed to engage in close combat against a similar opponent. The objective is to cause maximum damage and immobilize the opponent for more than ten seconds, using mechanical, pneumatic, or hydraulic weapons. In addition, the robot's aggressiveness and overall performance during the fight are evaluated.</p>
@@ -741,14 +741,14 @@ const translations = {
     <p class="mt-12 mb-4 text-lg">Learn more in the Official IV InkaChallege Coneimera Edition Rules for the <b>Combat Robot</b> challenge:</p>
 
     <div class="mt-6" style="max-height: 400px;">
-      <embed src="../regulations/Combate de Robots - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+      <embed src="regulations/Combate de Robots - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
     </div>
   </div>
     `,
     "content-walking":`
      <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/walking.png" alt="Walking-Race" class="rounded-xl shadow-lg w-[320px] h-auto">
+      <img src="images/walking.png" alt="Walking-Race" class="rounded-xl shadow-lg w-[320px] h-auto">
       <!-- text 2 the right -->
       <div>
         <p class="text-justify mb-4 text-lg">
@@ -762,7 +762,7 @@ const translations = {
 
 
     <div class="mt-6" style="max-height: 400px;">
-      <embed src="../regulations/Robot Walking-Race - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+      <embed src="regulations/Robot Walking-Race - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
     </div>
     </div>
     `,
@@ -770,7 +770,7 @@ const translations = {
     "content-soccer":`
     <div class="modal-content">
     <div class="flex items-start space-x-4"> <!-- div with 2 elements -->
-      <img src="../images/soccer.png" alt="Robot soccer" class="rounded-xl shadow-lg w-[240px] h-auto">
+      <img src="images/soccer.png" alt="Robot soccer" class="rounded-xl shadow-lg w-[240px] h-auto">
       <!-- text 2 the right -->
       <div>
         <p class="text-justify mb-4 text-lg">Bluetooth/RC Robot Soccer is a competition where mobile robots are capable
@@ -793,7 +793,7 @@ const translations = {
       </div>
     
       <div class="flex flex-col items-center md:items-start">
-        <img src="../images/soccer-field.png" alt="Bucle" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
+        <img src="images/soccer-field.png" alt="Bucle" class="rounded-xl shadow-lg w-[270px] h-auto self-center">
         <p class="text-sm text-gray-600 italic mt-2">Soccer filed meassurements.</p>
       </div>
     </div>
@@ -802,7 +802,7 @@ const translations = {
 
 
     <div class="mt-6" style="max-height: 400px;">
-      <embed src="../regulations/Robot Soccer - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
+      <embed src="regulations/Robot Soccer - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" width="100%" height="500px" type="application/pdf">
     </div>
   </div>
     `,
@@ -841,8 +841,8 @@ function changeLanguage(lang) {
   const esBtn = document.getElementById("btn-es");
   const enBtn = document.getElementById("btn-en");
   if (esBtn && enBtn) {
-    esBtn.src = (lang === "es") ? "../images/icons/es-on.png" : "../images/icons/es-off.png";
-    enBtn.src = (lang === "en") ? "../images/icons/en-on.png" : "../images/icons/en-off.png";
+    esBtn.src = (lang === "es") ? "images/icons/es-on.png" : "images/icons/es-off.png";
+    enBtn.src = (lang === "en") ? "images/icons/en-on.png" : "images/icons/en-off.png";
   }
 
   // Guardar preferencia
