@@ -1,6 +1,7 @@
 // Objetos con los textos en los dos idiomas
 const translations = {
   es: {
+    "background":"images/index-bg-es.png",
     // Navbar
     "nav-about": "Acerca de",
     "nav-rules": "Reglamentos",
@@ -424,6 +425,7 @@ const translations = {
 
   },
   en: {
+    "background":"images/index-bg.png",
     // Navbar
     "nav-about": "About",
     "nav-rules": "Regulations",
