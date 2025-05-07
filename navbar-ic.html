@@ -21,29 +21,34 @@
 <body>
   <!-- Header con navbar fijo -->
   <header class="fixed top-0 left-0 right-0 z-50">
-    <nav class="bg-[#17234c] px-3 py-2 shadow-lg text-xl mx-4 mt-2 rounded-2xl">
+    
+    <nav class="bg-[#212834] px-3 py-2 shadow-lg text-xl mx-4 mt-2 rounded-2xl h-[60px] md:h-auto">
       <div class="flex items-center justify-between w-full">
         <div class="flex items-center space-x-4">
-          <a href="index.html"><img src="images/inkachallenge-logo.png" alt="Logo" class="h-16"></a>
+          <a href="index.html"><img src="images/inkachallenge-logo.png" alt="Logo" class="h-10 md:h-20"></a>
+          
           <button id="hamburgerBtn" class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
           
           <!-- Menú desktop -->
           <div class="hidden md:flex items-center space-x-8">
-            <a id="nav-about" href="about.html" class="text-[#fffade] hover:text-[#fab41a] transition">
-              <span>About</span>
+            <a id="nav-rules" href="regulations.html" class="text-white hover:text-[#fab41a] transition">
+              <span>Regulations</span> </a>
+              <a id="nav-register" href="https://docs.google.com/forms/d/e/1FAIpQLSeP26fwcV5ZWC71HZFqm8QWnkWvVCFtDTgu71CHjlarNQ1iFQ/closedform" target="_blank" rel="noopener noreferrer" class="text-white hover:text-[#fab41a] transition">
+                <span>Register</span>       
+              </a>
+              <a id="nav-invit" href="invitations.html" class="text-white hover:text-[#fab41a] transition">
+                <span>Invitations</span>
+              </a>
+            <a id="nav-about" href="about.html" class="text-white hover:text-[#fab41a] transition">
+              <span>History</span>
             </a>
-            <a id="nav-rules" href="regulations.html" class="text-[#fffade] hover:text-[#fab41a] transition">
-              <span>Regulations</span>
-            </a>
-            <a id="nav-invit" href="invitations.html" class="text-[#fffade] hover:text-[#fab41a] transition">
-              <span>Invitations</span>
-            </a>
-            <a id="nav-register" href="https://docs.google.com/forms/d/e/1FAIpQLSeP26fwcV5ZWC71HZFqm8QWnkWvVCFtDTgu71CHjlarNQ1iFQ/closedform" target="_blank" rel="noopener noreferrer" class="text-[#fffade] hover:text-[#fab41a] transition">
-              <span>Register</span>       
-            </a>
-            <a id="nav-contact" href="contact.html" class="text-[#fffade] hover:text-[#fab41a] transition">
+            
+            <a id="nav-contact" href="contact.html" class="text-white hover:text-[#fab41a] transition">
               <span>Contact us</span>
             </a>
+            
+            
+            
           </div>
         </div>
         
@@ -56,21 +61,23 @@
     </nav>
 
     <!-- Menú móvil - Versión con elementos apilados -->
-<div id="mobileMenuContent" class="hidden md:hidden bg-[#17234c] text-white px-4 py-2 mt-2 ml-4 mr-5 rounded-b-2xl">
+<div id="mobileMenuContent" class="hidden md:hidden bg-[#212834] text-white px-4 py-2 mt-2 ml-4 mr-5 rounded-b-2xl">
+  
   <!-- Cada elemento en bloque completo -->
-  <a id="nav-about-m" href="about.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
-    <span class="ml-2">About</span>
-  </a>
+  
   <a id="nav-rules-m" href="regulations.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
     <span class="ml-2">Regulations</span>
-  </a>
-  <a id="nav-invit-m" href="invitations.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
-    <span class="ml-2">Invitations</span>
   </a>
   <a id="nav-register-m" href="https://docs.google.com/forms/d/e/1FAIpQLSeP26fwcV5ZWC71HZFqm8QWnkWvVCFtDTgu71CHjlarNQ1iFQ/closedform" 
      target="_blank"
      class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
     <span class="ml-2">Register</span>
+  </a>
+  <a id="nav-invit-m" href="invitations.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
+    <span class="ml-2">Invitations</span>
+  </a>
+  <a id="nav-about-m" href="about.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
+    <span class="ml-2">History</span>
   </a>
   <a id="nav-contact-m" href="contact.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a]">
     <span class="ml-2">Contact us</span>
