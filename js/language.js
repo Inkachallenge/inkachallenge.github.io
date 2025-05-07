@@ -940,7 +940,7 @@ const translations = {
         </span>
       </div>
     `,
-    "date": "Fecha: August 6th to 8th, 2025",
+    "date": "Date: August 6th to 8th, 2025",
     "second-title": "Previous Editions",
     "zero-ic": "SITEM 2017",
     "zero-desc": "In 2017, shortly after its success in Romania, <b>Robotronics UNT</b> took the initiative to organise a high-level robotics event in Peru. The pilot version of this competition took place at the <b>Mechatronics Technology Integration Week (SITEM: Semana de Integración Tecnológica)</b>, organised annually by the school of Mechatronics Engineering of the National University of Trujillo. This competition had several participating teams and with this experience of the organisers, the idea of creating an official event for the following year was born.",
