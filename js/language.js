@@ -897,8 +897,8 @@ const translations = {
 
     //invitaciones
     "invite-title":"📑 Solicitar invitaciones",
-    "invite-desc":`Si tu equipo necesita invitaciones, puedes enviar los siguientes datos al correo <a href="mailto:robotronicsunt@gmail.com" class="text-blue-400 underline hover:text-blue-200">
-    robotronicsunt@gmail.com
+    "invite-desc":`Si tu equipo necesita invitaciones, puedes enviar los siguientes datos al correo <a href="mailto:robotronics@unitru.edu.pe" class="text-blue-400 underline hover:text-blue-200">
+    robotronics@unitru.edu.pe
   </a>:`,
     "invite-list":`
       <li>Nombre de la institución</li>
@@ -1818,8 +1818,8 @@ const translations = {
     "contact-redes":"You can also follow our social media channels for more news about InkaChallenge IV - CONEIMERA Edition. See you in Trujillo!",
           //invitations
     "invite-title":"📑 Request invitations",
-    "invite-desc":`If your team needs invitations, you can send the following information to the e-mail <a href="mailto:robotronicsunt@gmail.com" class="text-blue-400 underline hover:text-blue-200">
-    robotronicsunt@gmail.com :`,
+    "invite-desc":`If your team needs invitations, you can send the following information to the e-mail <a href="mailto:robotronic@unitru.edu.pe" class="text-blue-400 underline hover:text-blue-200">
+    robotronics@unitru.edu.pe :`,
     "invite-list":`
       <li>Institution name</li>
       <li>Team name</li>
