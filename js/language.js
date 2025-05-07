@@ -2,14 +2,16 @@
 const translations = {
   es: {
     "background":"images/index-bg-es.png",
+    "background-mobile":"images/index-bg-m-es.png",
+    "map":"Ubicación:",
     // Navbar
-    "nav-about": "Acerca de",
+    "nav-about": "Historia",
     "nav-rules": "Reglamentos",
     "nav-accred": "Acreditaciones",
     "nav-invit": "Invitaciones",
     "nav-register": "Registro",
     "nav-contact": "Contáctanos",
-    "nav-about-m": "Acerca de",
+    "nav-about-m": "Historia",
     "nav-rules-m": "Reglamentos",
     "nav-accred-m": "Acreditaciones",
     "nav-invit-m": "Invitaciones",
@@ -910,15 +912,18 @@ const translations = {
 
   },
   en: {
-    "background":"images/index-bg.png",
+    "background":"images/index-bg-en.png",
+    "background-mobile":"images/index-bg-m-en.png",
+    "map":"Location:",
     // Navbar
-    "nav-about": "About",
+    // Navbar
+    "nav-about": "History",
     "nav-rules": "Regulations",
     "nav-accred": "Accreditations",
     "nav-invit": "Invitations",
     "nav-register": "Register",
     "nav-contact": "Contact us",
-    "nav-about-m": "About",
+    "nav-about-m": "History",
     "nav-rules-m": "Regulations",
     "nav-accred-m": "Accreditations",
     "nav-invit-m": "Invitations",
@@ -933,7 +938,7 @@ const translations = {
       <div id="venue" class="flex items-center gap-2">
         <img src="images/icons/location.png" alt="Ubicación" class="w-6 h-6">
         <span>
-          Venue: 
+          Location: 
           <a href="https://maps.google.com/?q=Universidad+Nacional+de+Trujillo" target="_blank" class="text-yellow-400 hover:underline hover:text-orange-400 transition">
             National University of Trujillo (UNT), Perú
           </a>
@@ -1837,11 +1842,22 @@ function changeLanguage(lang) {
   const langContent = translations[lang];
   for (const key in langContent) {
     const element = document.getElementById(key);
-    if (element && (key.startsWith('logo') || key === 'background')) {
+    if (element && (key.startsWith('logo') || key === 'background' || key === 'background-mobile')) {
       element.src = langContent[key];  // Para imágenes
     } else if (element) {
       element.innerHTML = langContent[key];  // Para textos
     }
+  }
+
+// Actualización específica para fondos responsivos
+  const mobileBackground = document.getElementById('background-mobile');
+  const desktopBackground = document.getElementById('background');
+  
+  if (mobileBackground && langContent['background-mobile']) {
+    mobileBackground.src = langContent['background-mobile'];
+  }
+  if (desktopBackground && langContent['background']) {
+    desktopBackground.src = langContent['background'];
   }
 
   // Cambiar iconos de idioma si existen
@@ -1852,6 +1868,16 @@ function changeLanguage(lang) {
     enBtn.src = (lang === "en") ? "images/icons/en-on.png" : "images/icons/en-off.png";
   }
 
-  // Guardar preferencia
+
+
+  // Actualizar atributo lang y guardar preferencia
+  document.documentElement.lang = lang;
   localStorage.setItem("preferredLanguage", lang);
 }
+
+// Carga inicial
+document.addEventListener('DOMContentLoaded', function() {
+  const savedLang = localStorage.getItem("preferredLanguage") || 
+                   (navigator.language.startsWith('es') ? 'es' : 'en');
+  changeLanguage(savedLang);
+});
