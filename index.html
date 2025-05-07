@@ -1,59 +1,47 @@
 <html lang="en">
-    <head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesic.css">
+    <title>INKACHALLENGE 2025</title>
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="stylesic.css">
-        <title>INKACHALLENGE 2025</title>
-        <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
-        <script src="https://cdn.tailwindcss.com"></script>
+<body class="relative">
+    <!-- Navbar fixed en móviles, estático en desktop -->
+    <div id="navbar-placeholder" class="fixed md:static top-0 left-0 right-0 z-50"></div>
 
-    </head>
-
-      <body>
-        <section class="flex justify-center my-4">
-          <img id="background" src="" alt="INKACHALLENGE" class="rounded-xl shadow-lg w-[100%] max-w-8xl">
+    <!-- Contenido principal con padding-top para compensar el navbar en móviles -->
+    <main class="pt-16 md:pt-0"> <!-- Ajusta pt-16 según la altura de tu navbar -->
+        <section class="flex justify-center my-4 mt-8 md:mt-4">
+            <img id="background" src="" alt="INKACHALLENGE" class="rounded-xl shadow-lg w-full max-w-8xl">
         </section>
-        
-        
-        <div id="navbar-placeholder"></div>
+    </main>
 
-        <script src="js/language.js"></script>
-        <script>
-          window.addEventListener("DOMContentLoaded", () => {
-            let savedLang = localStorage.getItem("preferredLanguage");
-
-            if (!savedLang) {
-              savedLang = "en"; // idioma por defecto solo en la primera visita
-              localStorage.setItem("preferredLanguage", savedLang);
-            }
-
-        
-            fetch('navbar-ic.html')
-              .then(res => res.text())
-              .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-        
-                // Esperamos al siguiente ciclo para asegurarnos de que el DOM del navbar ya esté insertado
-                setTimeout(() => {
-                  changeLanguage(savedLang);
-                  document.documentElement.lang = savedLang;
-                }, 0);
-              });
-          });
-        </script>
-  <!-- idioma -->
-  <script src="js/buttons.js"></script>
-  <script src="js/language.js"></script>
- 
-    </body>
     <footer class="text-white py-4 mt-4">
-      <div class="max-w-7xl mx-auto px-3 text-center">
-        <p class="text-sm">INKACHALLENGE IV - Trujillo, Perú 2025</p>
-      </div>
+        <div class="max-w-7xl mx-auto px-3 text-center">
+            <p class="text-sm">INKACHALLENGE IV - Trujillo, Perú 2025</p>
+        </div>
     </footer>
-    
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            let savedLang = localStorage.getItem("preferredLanguage") || "en";
+            
+            fetch('navbar-ic.html')
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                    setTimeout(() => {
+                        changeLanguage(savedLang);
+                        document.documentElement.lang = savedLang;
+                    }, 0);
+                });
+        });
+    </script>
+    <script src="js/buttons.js"></script>
+    <script src="js/language.js"></script>
+</body>
 </html>
-
-
