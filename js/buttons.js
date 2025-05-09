@@ -57,4 +57,5 @@ function setupModal() {
 
 // 3. Inicialización
 document.addEventListener("DOMContentLoaded", setupModal); // Para páginas estáticas
+
 // setupModal(); // Para contenido dinámico

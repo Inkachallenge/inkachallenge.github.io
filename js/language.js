@@ -2366,4 +2366,5 @@ document.addEventListener('DOMContentLoaded', function() {
   const savedLang = localStorage.getItem("preferredLanguage") || 
   (navigator.language.startsWith('es') ? 'es' : 'en');
   changeLanguage(savedLang);
+
 });
