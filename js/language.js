@@ -2194,7 +2194,7 @@ const translations = {
     "contact-redes":"You can also follow our social media channels for more news about InkaChallenge IV - CONEIMERA Edition. See you in Trujillo!",
           //invitations
     "invite-title":"📑 Request invitations",
-    "invite-desc":`If your team needs invitations, you can send the following information to the e-mail <a href="mailto:robotronic@unitru.edu.pe" class="text-blue-400 underline hover:text-blue-200">
+    "invite-desc":`If your team needs invitations, you can send the following information to the e-mail <a href="mailto:robotronics@unitru.edu.pe" class="text-blue-400 underline hover:text-blue-200">
     robotronics@unitru.edu.pe :`,
     "invite-list":`
       <li>Institution name</li>
