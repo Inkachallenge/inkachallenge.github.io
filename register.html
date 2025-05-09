@@ -1,0 +1,429 @@
+<html lang="preferredLanguage">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylesic.css">
+        <link rel="stylesheet" href="style-tables.css">
+        <title>INKACHALLENGE 2025</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icon-ic4.png"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+        .boton-registro {
+        background-color: #fab41a;
+        color: rgb(255, 255, 255);
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto 0; /* Centrado horizontal con margen superior */
+        text-decoration: none;
+        text-align: center;
+        width: fit-content;
+      }
+
+    .boton-registro:hover {
+    background-color: #e6a217;
+
+        }
+        </style>
+      </head>
+      <body>
+
+<!-- NAVBAR -->
+<div id="navbar-placeholder"></div>
+
+<!-- Carga el JS de traducción ANTES del fetch -->
+<script src="js/language.js"></script>
+
+<script>
+  const savedLang = localStorage.getItem("preferredLanguage") || "en";
+
+  // Cargar el navbar y traducirlo una vez que esté insertado
+  fetch('navbar-ic.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('navbar-placeholder').innerHTML = data;
+
+      // Esperar a que los elementos del navbar estén en el DOM
+      setTimeout(() => {
+        changeLanguage(savedLang); // <- Esto asegura que la función se aplique también al navbar
+      }, 0);
+    });
+</script>
+
+<main class="max-w-6xl mx-auto px-4 py-20">
+  <h2 class="schedule-heading font-bold mt-4 md:mt-12" id="pricing-title"></h2>
+
+  <!-- Versión desktop -->
+  <table class="desktop-schedule pricing-table">
+      <thead>
+          <tr>
+              <th class="competition-header" id="competition-header"></th>
+              <th class="category-header" id="amateur-header"></th>
+              <th class="category-header" id="senior-header"></th>
+              <th class="category-header" id="master-header"></th>
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Minisumo Autónomo -->
+          <tr>
+              <td id="competition-minisumo"></td>
+              <td id="price-amateur-minisumo"></td>
+              <td id="price-senior-minisumo"></td>
+              <td id="price-master-minisumo"></td>
+          </tr>
+          <!-- Mini Sumo Bluetooth/RC -->
+          <tr>
+              <td id="competition-bluetooth"></td>
+              <td id="price-amateur-bluetooth"></td>
+              <td id="price-senior-bluetooth"></td>
+              <td id="price-master-bluetooth"></td>
+          </tr>
+          <!-- Seguidor de Línea Velocista -->
+          <tr>
+              <td id="competition-velocista"></td>
+              <td id="price-amateur-velocista"></td>
+              <td id="price-senior-velocista"></td>
+              <td id="price-master-velocista"></td>
+          </tr>
+          <!-- Combate -->
+          <tr>
+              <td id="competition-combate"></td>
+              <td id="price-amateur-combate"></td>
+              <td id="price-senior-combate"></td>
+              <td>-</td>
+          </tr>
+          <!-- Robot Soccer -->
+          <tr>
+              <td id="competition-soccer"></td>
+              <td id="price-amateur-soccer"></td>
+              <td id="price-senior-soccer"></td>
+              <td>-</td>
+          </tr>
+          <!-- Micromouse -->
+          <tr>
+              <td id="competition-micromouse"></td>
+              <td id="price-amateur-micromouse"></td>
+              <td id="price-senior-micromouse"></td>
+              <td>-</td>
+          </tr>
+          <!-- Robot Walking-Race -->
+          <tr>
+              <td id="competition-walking"></td>
+              <td>-</td>
+              <td id="price-senior-walking"></td>
+              <td id="price-master-walking"></td>
+          </tr>
+          <!-- Robot Kung-Fu -->
+          <tr>
+              <td id="competition-kungfu"></td>
+              <td>-</td>
+              <td id="price-senior-kungfu"></td>
+              <td id="price-master-kungfu"></td>
+          </tr>
+          <!-- Seguidor de Línea Enhanced -->
+          <tr>
+              <td id="competition-enhanced"></td>
+              <td>-</td>
+              <td>-</td>
+              <td id="price-master-enhanced"></td>
+          </tr>
+          <!-- Seguidor de Línea Turbo -->
+          <tr>
+              <td id="competition-turbo"></td>
+              <td>-</td>
+              <td>-</td>
+              <td id="price-master-turbo"></td>
+          </tr>
+          <!-- Seguidor de Línea Nat-Car -->
+          <tr>
+              <td id="competition-natcar"></td>
+              <td>-</td>
+              <td>-</td>
+              <td id="price-master-natcar"></td>
+          </tr>
+          <!-- Micro Sumo Autónomo -->
+          <tr>
+              <td id="competition-microsumo"></td>
+              <td>-</td>
+              <td>-</td>
+              <td id="price-master-microsumo"></td>
+          </tr>
+      </tbody>
+  </table>
+  
+<!-- Versión móvil - Estructura por categorías -->
+<div class="mobile-schedule">
+  <!-- Minisumo Autónomo -->
+  <div class="mobile-category" id="mobile-category-minisumo">
+      <div class="mobile-category-header" id="mobile-competition-minisumo"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-minisumo"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-minisumo"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-minisumo"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td id="mobile-price-amateur-minisumo"></td>
+                  <td id="mobile-price-senior-minisumo"></td>
+                  <td id="mobile-price-master-minisumo"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Mini Sumo Bluetooth/RC -->
+  <div class="mobile-category" id="mobile-category-bluetooth">
+      <div class="mobile-category-header" id="mobile-competition-bluetooth"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-bluetooth"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-bluetooth"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-bluetooth"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td id="mobile-price-amateur-bluetooth"></td>
+                  <td id="mobile-price-senior-bluetooth"></td>
+                  <td id="mobile-price-master-bluetooth"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Seguidor de Línea Velocista -->
+  <div class="mobile-category" id="mobile-category-velocista">
+      <div class="mobile-category-header" id="mobile-competition-velocista"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-velocista"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-velocista"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-velocista"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td id="mobile-price-amateur-velocista"></td>
+                  <td id="mobile-price-senior-velocista"></td>
+                  <td id="mobile-price-master-velocista"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Combate -->
+  <div class="mobile-category" id="mobile-category-combate">
+      <div class="mobile-category-header" id="mobile-competition-combate"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-combate"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-combate"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-combate"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td id="mobile-price-amateur-combate"></td>
+                  <td id="mobile-price-senior-combate"></td>
+                  <td>-</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Robot Soccer -->
+  <div class="mobile-category" id="mobile-category-soccer">
+      <div class="mobile-category-header" id="mobile-competition-soccer"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-soccer"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-soccer"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-soccer"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td id="mobile-price-amateur-soccer"></td>
+                  <td id="mobile-price-senior-soccer"></td>
+                  <td>-</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Micromouse -->
+  <div class="mobile-category" id="mobile-category-micromouse">
+      <div class="mobile-category-header" id="mobile-competition-micromouse"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-micromouse"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-micromouse"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-micromouse"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td id="mobile-price-amateur-micromouse"></td>
+                  <td id="mobile-price-senior-micromouse"></td>
+                  <td>-</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Robot Walking-Race -->
+  <div class="mobile-category" id="mobile-category-walking">
+      <div class="mobile-category-header" id="mobile-competition-walking"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-walking"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-walking"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-walking"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>-</td>
+                  <td id="mobile-price-senior-walking"></td>
+                  <td id="mobile-price-master-walking"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Robot Kung-Fu -->
+  <div class="mobile-category" id="mobile-category-kungfu">
+      <div class="mobile-category-header" id="mobile-competition-kungfu"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-kungfu"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-kungfu"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-kungfu"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>-</td>
+                  <td id="mobile-price-senior-kungfu"></td>
+                  <td id="mobile-price-master-kungfu"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Seguidor de Línea Enhanced -->
+  <div class="mobile-category" id="mobile-category-enhanced">
+      <div class="mobile-category-header" id="mobile-competition-enhanced"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-enhanced"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-enhanced"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-enhanced"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>-</td>
+                  <td>-</td>
+                  <td id="mobile-price-master-enhanced"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Seguidor de Línea Turbo -->
+  <div class="mobile-category" id="mobile-category-turbo">
+      <div class="mobile-category-header" id="mobile-competition-turbo"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-turbo"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-turbo"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-turbo"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>-</td>
+                  <td>-</td>
+                  <td id="mobile-price-master-turbo"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Seguidor de Línea Nat-Car -->
+  <div class="mobile-category" id="mobile-category-natcar">
+      <div class="mobile-category-header" id="mobile-competition-natcar"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-natcar"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-natcar"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-natcar"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>-</td>
+                  <td>-</td>
+                  <td id="mobile-price-master-natcar"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- Micro Sumo Autónomo -->
+  <div class="mobile-category" id="mobile-category-microsumo">
+      <div class="mobile-category-header" id="mobile-competition-microsumo"></div>
+      <table class="mobile-pricing-table">
+          <thead>
+              <tr>
+                  <th class="mobile-level-header" id="mobile-amateur-header-microsumo"></th>
+                  <th class="mobile-level-header" id="mobile-senior-header-microsumo"></th>
+                  <th class="mobile-level-header" id="mobile-master-header-microsumo"></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>-</td>
+                  <td>-</td>
+                  <td id="mobile-price-master-microsumo"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+ 
+</div>
+    <!-- Botón de registro -->
+    <a id="boton-register" href="https://docs.google.com/forms/d/e/1FAIpQLSeP26fwcV5ZWC71HZFqm8QWnkWvVCFtDTgu71CHjlarNQ1iFQ/viewform" class="boton-registro" target="_blank" rel="noopener noreferrer">REGÍSTRATE AQUÍ</a>
+</main>
+
+
+<!-- idioma -->
+<script src="js/buttons.js"></script>
+<script src="js/language.js"></script>
+</body>
+<footer class="text-white">
+    <div class="max-w-7xl mx-auto px-4 text-center mb-4">
+      <p id="footer-text"  class="text-sm"></p>
+    </div>
+  </footer>
+  </html>

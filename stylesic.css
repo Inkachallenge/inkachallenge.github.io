@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(to top, #17234c, #151515);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: 'Lexend-Light', sans-serif;
+  }
+
+  
+@font-face {
+    font-family: 'Lexend-SB';
+    src: url('fonts/Lexend-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lexend-Light';
+    src: url('fonts/Lexend-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('fonts/BAHNSCHRIFT\ 7.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav {
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+/* Estilo para todo el contenido del modal */
+.modal-content {
+    font-family: 'Lexend-Light';
+}
