@@ -1,5 +1,3 @@
-
-
 //menu hamburguesa
   // Función global para el menú
   function toggleMenu() {
