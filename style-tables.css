@@ -1,0 +1,182 @@
+/* ESTILOS GENERALES */
+.schedule-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Lexend-Light', sans-serif;
+}
+
+.schedule-heading {
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #4191a0;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* VERSIÓN DESKTOP */
+.desktop-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.desktop-schedule th, 
+.desktop-schedule td {
+    border: 1px solid #e2e8f0;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.desktop-schedule th {
+    background-color: #4191a0;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* Fondo transparente SOLO para celdas de horas (td) */
+.desktop-schedule td.time-column {
+    background-color: transparent !important;
+    font-weight: bold;
+    color: #ffc31e;
+}
+
+/* Mantén el fondo azul para el encabezado (th) */
+.desktop-schedule th.time-column {
+    background-color: #4191a0 !important; 
+    font-weight: 800;
+    
+    width: 15%;
+}
+
+/* Estilos generales para móvil */
+.mobile-schedule {
+    display: none; /* Se activa con media query */
+    width: 100%;
+    background-color: transparent;
+}
+
+.mobile-category {
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+    border: 1px solid #e2e8f0; /* Borde blanco */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mobile-category-header {
+    background-color: #4191a0;
+    color: white;
+    padding: 12px 16px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.mobile-pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.mobile-pricing-table th, 
+.mobile-pricing-table td {
+    border: 1px solid #e2e8f0; /* Bordes blancos */
+    padding: 10px 12px;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+}
+
+.mobile-level-header {
+    background-color: rgba(65, 145, 160, 0.7); /* Fondo semitransparente */
+    font-weight: 600;
+    color: white;
+}
+
+/* Ajustes para móvil */
+@media (max-width: 768px) {
+    .desktop-schedule {
+        display: none;
+    }
+    
+    .mobile-schedule {
+        display: block;
+    }
+    
+    .mobile-pricing-table th, 
+    .mobile-pricing-table td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+/* Efecto hover para interactividad */
+.mobile-category:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .desktop-schedule {
+        display: none;
+    }
+    
+    .mobile-schedule {
+        display: block;
+    }
+    
+    .day-header {
+        background-color: #4191a0;
+        color: white;
+        padding: 12px 16px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid #e2e8f0;
+        
+    }
+
+    
+    .mobile-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: transparent;
+    }
+    
+    .mobile-table th, 
+    .mobile-table td {
+        border: 1px solid #e2e8f0; /* Bordes blancos */
+        padding: 10px 12px;
+        text-align: center;
+        color: white;
+        background-color: transparent;
+    }
+    
+    .time-column {
+        width: 25%;
+    }
+    
+    .event-column {
+        width: 75%;
+    }
+}
+
+/* ESTILOS PARA EVENTOS IMPORTANTES */
+.important-event {
+    background-color: rgba(65, 145, 160, 0.2);
+    border-left: 3px solid #fab41a;
+}
+
+/* AJUSTES PARA CELDAS VACÍAS */
+td:empty {
+    background-color: rgba(255, 255, 255, 0.05);
+}

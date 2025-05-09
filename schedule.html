@@ -1,0 +1,317 @@
+<html lang="preferredLanguage">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesic.css">
+    <link rel="stylesheet" href="style-tables.css">
+    <title>INKACHALLENGE 2025</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon-ic4.png"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+    </style>
+</head>
+<body class="bg-gray-900">
+    <div id="navbar-placeholder"></div>
+
+    <script src="js/language.js"></script>
+    
+    <script>
+        const savedLang = localStorage.getItem("preferredLanguage") || "en";
+    
+        fetch('navbar-ic.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+                setTimeout(() => {
+                    changeLanguage(savedLang);
+                }, 0);
+            });
+    </script>
+<main class="schedule-container max-w-6xl mx-auto px-4 py-20">
+    <h1 id="schedule-title" class="text-3xl font-bold text-center mt-2 md:mt-8 text-[#fab41a]"></h1>
+    
+    <h2 id="important-dates-heading" class="schedule-heading font-bold"></h2>
+    
+    <!-- Versión desktop (transparente) -->
+<table id="important-dates-desktop" class="desktop-schedule" style="background-color: transparent;">
+    <thead>
+        <tr>
+            <th id="activity-header" style="width: 40%; background-color: #4191a0;"></th>
+            <th id="date-header" style="width: 30%; background-color: #4191a0;"></th>
+            <th id="time-header" style="width: 30%; background-color: #4191a0;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="registration-closing"></td>
+            <td id="registration-date"></td>
+            <td id="registration-time"></td>
+        </tr>
+        <tr>
+            <td id="draw-activity"></td>
+            <td id="draw-date"></td>
+            <td id="draw-time"></td>
+        </tr>
+        <tr>
+            <td id="competition-activity"></td>
+            <td id="competition-dates"></td>
+            <td id="competition-hours"></td>
+        </tr>
+    </tbody>
+</table>
+
+    
+    <!-- Versión móvil  -->
+<div id="important-dates-mobile" class="mobile-schedule">
+    <div class="day-schedule" style="margin-bottom: 1rem;">
+        <table class="mobile-table" style="border-collapse: collapse;">
+            <tbody>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <td class="event-column" style="padding: 0.75rem 1rem;">
+                        <span id="mobile-registration-title" style="display: block; color: #fab41a; font-weight: bold; margin-bottom: 0.25rem;"></span>
+                        <span id="mobile-registration-date" style="display: block; margin-bottom: 0.25rem;"></span>
+                        <span id="mobile-registration-time" style="display: block;"></span>
+                    </td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <td class="event-column" style="padding: 0.75rem 1rem;">
+                        <span id="mobile-draw-title" style="display: block; color: #fab41a; font-weight: bold; margin-bottom: 0.25rem;"></span>
+                        <span id="mobile-draw-date" style="display: block; margin-bottom: 0.25rem;"></span>
+                        <span id="mobile-draw-time" style="display: block;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="event-column" style="padding: 0.75rem 1rem;">
+                        <span id="mobile-competition-title" style="display: block; color: #fab41a; font-weight: bold; margin-bottom: 0.25rem;"></span>
+                        <span id="mobile-competition-dates" style="display: block; margin-bottom: 0.25rem;"></span>
+                        <span id="mobile-competition-hours" style="display: block;"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    
+    <h2 id="competition-schedule-heading" class="schedule-heading font-bold"></h2>
+    
+    <!-- Versión desktop -->
+    <table id="competition-schedule-desktop" class="desktop-schedule">
+        <thead>
+            <tr>
+                <th id="time-column-header" class="time-column"></th>
+                <th id="thursday-header"></th>
+                <th id="friday-header"></th>
+                <th id="saturday-header"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="time-9-11" class="time-column"></td>
+                <td id="thursday-9-11"></td>
+                <td id="friday-9-11"></td>
+                <td id="saturday-9-11"></td>
+            </tr>
+            <tr>
+                <td id="time-11-1" class="time-column"></td>
+                <td id="thursday-11-1"></td>
+                <td id="friday-11-1">
+                    <br>
+                    <br>
+                    <br>
+                    
+                </td>
+                <td id="saturday-11-1">
+                    <br>
+                    <br>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td id="time-1-2" class="time-column"></td>
+                <td id="thursday-1-2"></td>
+                <td id="friday-1-2"></td>
+                <td id="saturday-1-2"></td>
+            </tr>
+            <tr>
+                <td id="time-2-5" class="time-column"></td>
+                <td id="thursday-2-5">
+                    <br>
+                    <br>
+                    
+                </td>
+                <td id="friday-2-5">
+                    <br>
+                    <br>
+                    
+                </td>
+                <td id="saturday-2-5">
+                    <br>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td id="time-5-7" class="time-column"></td>
+                <td id="thursday-5-7">
+                    <br>
+                    
+                </td>
+                <td id="friday-5-7">
+                    <br>
+                    
+                </td>
+                <td id="saturday-5-7">
+                    <br>
+                    <br>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Versión móvil -->
+    <div id="competition-schedule-mobile" class="mobile-schedule">
+        <!--  -->
+        <div id="thursday-schedule" class="day-schedule">
+            <div id="thursday-header-mobile" class="day-header"></div>
+            <table class="mobile-table">
+                <tbody>
+                    <tr>
+                        <td id="mobile-thursday-time-9-11" class="time-column"></td>
+                        <td id="mobile-thursday-9-11" class="event-column">
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-thursday-time-11-1" class="time-column"></td>
+                        <td id="mobile-thursday-11-1" class="event-column">
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-thursday-time-1-2" class="time-column"></td>
+                        <td id="mobile-thursday-1-2" class="event-column">
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-thursday-time-2-5" class="time-column"></td>
+                        <td id="mobile-thursday-2-5" class="event-column">
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-thursday-time-5-7" class="time-column"></td>
+                        <td id="mobile-thursday-5-7" class="event-column">
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!--  -->
+        <div id="friday-schedule" class="day-schedule">
+            <div id="friday-header-mobile" class="day-header"></div>
+            <table class="mobile-table">
+                <tbody>
+                    <tr>
+                        <td id="mobile-friday-time-9-11" class="time-column"></td>
+                        <td id="mobile-friday-9-11" class="event-column">
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-friday-time-11-1" class="time-column"></td>
+                        <td id="mobile-friday-11-1" class="event-column">
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-friday-time-1-2" class="time-column"></td>
+                        <td id="mobile-friday-1-2" class="event-column">
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-friday-time-2-5" class="time-column"></td>
+                        <td id="mobile-friday-2-5" class="event-column">
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-friday-time-5-7" class="time-column"></td>
+                        <td id="mobile-friday-5-7" class="event-column">
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!--  -->
+        <div id="saturday-schedule" class="day-schedule">
+            <div id="saturday-header-mobile" class="day-header"></div>
+            <table class="mobile-table">
+                <tbody>
+                    <tr>
+                        <td id="mobile-saturday-time-9-11" class="time-column"></td>
+                        <td id="mobile-saturday-9-11" class="event-column">
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-saturday-time-11-1" class="time-column"></td>
+                        <td id="mobile-saturday-11-1" class="event-column">
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-saturday-time-1-2" class="time-column"></td>
+                        <td id="mobile-saturday-1-2" class="event-column">
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-saturday-time-2-5" class="time-column"></td>
+                        <td id="mobile-saturday-2-5" class="event-column">
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="mobile-saturday-time-5-7" class="time-column"></td>
+                        <td id="mobile-saturday-5-7" class="event-column">
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                            <span class="event-item"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<!-- idioma -->
+<script src="js/languages.js"></script>
+<script src="js/buttons.js"></script>
+
+</body>
+<footer class="text-white">
+    <div class="max-w-7xl mx-auto px-4 text-center mb-4">
+      <p id="footer-text"  class="text-sm"></p>
+    </div>
+  </footer>
+</html>
