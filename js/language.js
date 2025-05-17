@@ -344,6 +344,11 @@ const translations = {
         alt="Seguidor de línea enhanced" 
         class="rounded-xl shadow-lg w-full h-auto"
       >
+      <p class="text-sm text-gray-600 italic mt-2 text-center">
+        <a href="https://www.facebook.com/share/r/16Db3T9RcK/" target="_blank" class="text-blue-600 hover:underline">
+          Ver video
+        </a>
+      </p>
     </div>
 
     <!-- Descripción derecha -->
@@ -428,6 +433,11 @@ const translations = {
         alt="Seguidor de línea turbo" 
         class="rounded-xl shadow-lg w-full h-auto"
       >
+      <p class="text-sm text-gray-600 italic mt-2 text-center">
+        <a href="https://www.facebook.com/share/v/1C3rW5JShM/" target="_blank" class="text-blue-600 hover:underline">
+          Ver video
+        </a>
+      </p>
     </div>
 
     <!-- Descripción derecha -->
@@ -1421,6 +1431,11 @@ const translations = {
         alt="Line follower enhanced" 
         class="rounded-xl shadow-lg w-full h-auto"
       >
+      <p class="text-sm text-gray-600 italic mt-2 text-center">
+        <a href="https://www.facebook.com/share/r/16Db3T9RcK/" target="_blank" class="text-blue-600 hover:underline">
+          Watch video
+        </a>
+      </p>
     </div>
 
     <!-- Right description -->
@@ -1505,6 +1520,11 @@ const translations = {
         alt="Linefollower Turbo" 
         class="rounded-xl shadow-lg w-full h-auto"
       >
+      <p class="text-sm text-gray-600 italic mt-2 text-center">
+        <a href="https://www.facebook.com/share/v/1C3rW5JShM/" target="_blank" class="text-blue-600 hover:underline">
+          Watch video
+        </a>
+      </p>
     </div>
 
     <!-- Descripción derecha -->
