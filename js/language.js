@@ -319,7 +319,7 @@ const translations = {
     <!-- Versión Móvil: Botón de descarga (solo visible en móvil) -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1e1PpEROTTyPnwfikiDZZDzzhEsOjxLtA/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/16HLRZ5SzYVNmhphYK1TyL32VzQDcj43f/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -409,7 +409,7 @@ const translations = {
     <!-- Versión Móvil: Botón de descarga -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1MPlvaQjowgfLdPX3ioTmQIFSYa6ASDrZ/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1PNMHImQc2_obfSbVMbEOjp7zlusWP2k4/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -501,7 +501,7 @@ const translations = {
     <!-- Versión Móvil: Botón de descarga -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1qgT4fIvqkQt5aZZ-hYymEunJ6QX629nx/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1iDFHYnICdJukt4U45b0n1dCQUvA8mez0/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -589,7 +589,7 @@ const translations = {
     <!-- Versión Móvil: Botón de descarga -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/18JKykogNKvv6U2VqzXJMlS_nc1L2yI4M/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1AsnMXoFJHVRAHBPyB4EUi1ZgV3D67K6J/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -660,7 +660,7 @@ const translations = {
     <!-- Versión Móvil: Botón de descarga (solo visible en móvil) -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/114B3-KH3x0g6M4fRs4lGtRLURVvp3cxV/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1cXPjNmW5IIeHpqPrlArdbqR4_eJ7j8ox/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -733,7 +733,7 @@ const translations = {
     <!-- Versión Móvil: Botón de descarga (solo visible en móvil) -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1W6FrRos0_F1o8HY64Uc8HvhpuzT79x20/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1-awkRzs5cIkuOaguW-0dfccDmwSbjRwx/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -796,7 +796,7 @@ const translations = {
       <!-- Versión Móvil: Botón de descarga -->
       <div class="md:hidden text-center">
         <a 
-          href="https://drive.google.com/file/d/1zW3mVrlgV96xooQi6quGt9v49dRaoS4E/view?usp=drive_link" 
+          href="https://drive.google.com/file/d/1vsejEfVUSid-fSQd5mkIezIe0aRBP_Bv/view?usp=drive_link" 
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -804,7 +804,7 @@ const translations = {
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
           </svg>
-          Ver Reglamento Completo (PDF)
+          Ver reglamento completo (PDF)
         </a>
       </div>
     </div>
@@ -857,7 +857,7 @@ const translations = {
       <!-- Versión Móvil: Botón de descarga -->
       <div class="md:hidden text-center">
         <a 
-          href="https://drive.google.com/file/d/15AbdA5rl8WNmCYlW3Hn46zgECDITZGub/view?usp=drive_link" 
+          href="https://drive.google.com/file/d/1d-8DkH3CsWXFOywBFi8K-OgJ1JERDQGo/view?usp=drive_link" 
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -918,7 +918,7 @@ const translations = {
       <!-- Versión Móvil: Botón de descarga -->
       <div class="md:hidden text-center">
         <a 
-          href="https://drive.google.com/file/d/1mP-gmSkUOBbEJXoGqgjJFM5NmgXRSSut/view?usp=drive_link" 
+          href="https://drive.google.com/file/d/12Y9bw5AWrKhCCoc1IzBuoewOerPzR-Ny/view?usp=drive_link" 
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -977,8 +977,7 @@ const translations = {
           class="border rounded-lg shadow-sm">
       </div>
       <div class="md:hidden text-center">
-        <a 
-          href="https://drive.google.com/file/d/1wa4rxqMcA9SstOrKPE7cDdDOfGX0otib/view?usp=drive_link" 
+        <a ref="https://drive.google.com/file/d/1ArZAPkpx84ZTHF2LaXDDxY9ZqY8o3w5k/view?usp=drive_link" 
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors">
@@ -1027,7 +1026,7 @@ const translations = {
       </div>
       <div class="md:hidden text-center">
         <a 
-          href="https://drive.google.com/file/d/1RM_U1D3RdFUSit7XuImM7suN0Ocg1GoY/view?usp=drive_link" 
+          href="https://drive.google.com/file/d/1AzrXZDQfLIa8gLOJXnhizquWdU9-Wga2/view?usp=drive_link" 
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors">
@@ -1092,7 +1091,7 @@ const translations = {
       </div>
       <div class="md:hidden text-center">
         <a 
-          href="https://drive.google.com/file/d/1AYsuJeOx1V7qxDrF64o3Llcnji5Ac05N/view?usp=drive_link" 
+          href="https://drive.google.com/file/d/1VutQSvqb-2l6MEOmnTD6SI71hMTtZ7_e/view?usp=drive_link" 
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors">
@@ -1405,7 +1404,7 @@ const translations = {
     <!-- Mobile version: Download button (only visible on mobile) -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1e1PpEROTTyPnwfikiDZZDzzhEsOjxLtA/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/16HLRZ5SzYVNmhphYK1TyL32VzQDcj43f/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -1495,7 +1494,7 @@ const translations = {
     <!-- Mobile version: Download button -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1MPlvaQjowgfLdPX3ioTmQIFSYa6ASDrZ/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1PNMHImQc2_obfSbVMbEOjp7zlusWP2k4/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -1587,7 +1586,7 @@ const translations = {
     <!-- Versión Móvil: Botón de descarga -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1qgT4fIvqkQt5aZZ-hYymEunJ6QX629nx/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1iDFHYnICdJukt4U45b0n1dCQUvA8mez0/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -1676,7 +1675,7 @@ const translations = {
     <!-- Mobile: Download button -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/18JKykogNKvv6U2VqzXJMlS_nc1L2yI4M/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1AsnMXoFJHVRAHBPyB4EUi1ZgV3D67K6J/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -1749,7 +1748,7 @@ const translations = {
     <!-- Mobile version: Download button (visible only on mobile) -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/114B3-KH3x0g6M4fRs4lGtRLURVvp3cxV/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1cXPjNmW5IIeHpqPrlArdbqR4_eJ7j8ox/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -1818,7 +1817,7 @@ const translations = {
     <!-- Mobile version: download button -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1W6FrRos0_F1o8HY64Uc8HvhpuzT79x20/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1-awkRzs5cIkuOaguW-0dfccDmwSbjRwx/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -1880,7 +1879,7 @@ const translations = {
     <!-- Mobile version: download button -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1zW3mVrlgV96xooQi6quGt9v49dRaoS4E/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1vsejEfVUSid-fSQd5mkIezIe0aRBP_Bv/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -1941,7 +1940,7 @@ const translations = {
     <!-- Mobile version: Download button -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/15AbdA5rl8WNmCYlW3Hn46zgECDITZGub/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1d-8DkH3CsWXFOywBFi8K-OgJ1JERDQGo/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -2002,7 +2001,7 @@ const translations = {
     <!-- Versión Móvil: Botón de descarga -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1mP-gmSkUOBbEJXoGqgjJFM5NmgXRSSut/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/12Y9bw5AWrKhCCoc1IzBuoewOerPzR-Ny/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -2064,7 +2063,7 @@ const translations = {
     <!-- Mobile version: Download button -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1wa4rxqMcA9SstOrKPE7cDdDOfGX0otib/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1ArZAPkpx84ZTHF2LaXDDxY9ZqY8o3w5k/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors">
@@ -2123,7 +2122,7 @@ const translations = {
     <!-- Versión Móvil: Botón de descarga -->
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1RM_U1D3RdFUSit7XuImM7suN0Ocg1GoY/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1AzrXZDQfLIa8gLOJXnhizquWdU9-Wga2/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
@@ -2193,7 +2192,7 @@ const translations = {
     </div>
     <div class="md:hidden text-center">
       <a 
-        href="https://drive.google.com/file/d/1AYsuJeOx1V7qxDrF64o3Llcnji5Ac05N/view?usp=drive_link" 
+        href="https://drive.google.com/file/d/1VutQSvqb-2l6MEOmnTD6SI71hMTtZ7_e/view?usp=drive_link" 
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-6 py-3 bg-[#17234c] text-white rounded-lg hover:bg-[#fab41a] transition-colors"
