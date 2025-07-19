@@ -16,18 +16,24 @@
 
     <script src="js/language.js"></script>
     
-    <script>
-        const savedLang = localStorage.getItem("preferredLanguage") || "en";
-    
-        fetch('navbar-ic.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-                setTimeout(() => {
-                    changeLanguage(savedLang);
-                }, 0);
-            });
-    </script>
+      <!-- Carga el JS de traducción ANTES del fetch -->
+      <script src="js/language.js"></script>
+      <script src="js/contador.js"></script>
+      
+      <script>
+      const savedLang = localStorage.getItem("preferredLanguage") || "en";
+
+      fetch('navbar-ic.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+
+          setTimeout(() => {
+            changeLanguage(savedLang);
+            iniciarContador(); // ✅ Llama al contador manualmente aquí
+          }, 0);
+        });
+      </script>
 <main class="schedule-container max-w-6xl mx-auto px-4 py-20">
     <h1 id="schedule-title" class="text-3xl font-bold text-center mt-2 md:mt-8 text-[#fab41a]"></h1>
     

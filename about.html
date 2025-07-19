@@ -13,24 +13,24 @@
        <!-- NAVBAR -->
 <div id="navbar-placeholder"></div>
 
-<!-- Carga el JS de traducción ANTES del fetch -->
-<script src="js/language.js"></script>
+      <!-- Carga el JS de traducción ANTES del fetch -->
+      <script src="js/language.js"></script>
+      <script src="js/contador.js"></script>
+      
+      <script>
+      const savedLang = localStorage.getItem("preferredLanguage") || "en";
 
-<script>
-  const savedLang = localStorage.getItem("preferredLanguage") || "en";
+      fetch('navbar-ic.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
 
-  // Cargar el navbar y traducirlo una vez que esté insertado
-  fetch('navbar-ic.html')
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById('navbar-placeholder').innerHTML = data;
-
-      // Esperar a que los elementos del navbar estén en el DOM
-      setTimeout(() => {
-        changeLanguage(savedLang); // <- Esto asegura que la función se aplique también al navbar
-      }, 0);
-    });
-</script>
+          setTimeout(() => {
+            changeLanguage(savedLang);
+            iniciarContador(); // ✅ Llama al contador manualmente aquí
+          }, 0);
+        });
+      </script>
 
 <!-- Sección Hero - Responsive -->
 <section class="flex flex-col md:flex-row items-center gap-4 px-4 md:px-8 py-8 md:py-12 mt-16 md:mt-20 max-w-8xl mx-auto">
