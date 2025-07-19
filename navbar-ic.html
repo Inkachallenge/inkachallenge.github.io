@@ -24,7 +24,8 @@
   <!-- Navbar -->
   <header class="fixed top-0 left-0 right-0 z-50">
     <nav class="bg-[#212834] px-3 py-2 shadow-lg text-xl mx-4 mt-2 rounded-2xl h-[60px] md:h-auto">
-      <div class="flex items-center justify-between w-full">
+      <div class="flex items-center justify-between w-full flex-nowrap overflow-x-auto gap-1 md:gap-4">
+
         <div class="flex items-center space-x-4">
           <a href="index.html">
             <img src="images/inkachallenge-logo.png" alt="Logo" class="h-10 md:h-20" />
@@ -43,26 +44,30 @@
           <a id="nav-inscdeadline" class="text-white hover:text-[#fab41a] transition"><span>Cierre de inscripciones</span></a>
         </div>
 
-        <!-- Cuenta regresiva -->
-        <div class="mt-2 md:mt-0 flex items-center justify-center w-full md:w-auto text-[#ffcc00]">
-          <table class="text-center font-semibold text-sm md:text-base text-[#ffcc00]">
-            <tr class="text-xl md:text-2xl">
-              <td id="dias">00</td>
-              <td class="px-2">|</td>
-              <td id="horas">00</td>
-              <td class="px-2">|</td>
-              <td id="minutos">00</td>
-              <td class="px-2">|</td>
-              <td id="segundos">00</td>
-            </tr>
-            <tr class="text-xs md:text-sm font-normal">
-              <td id="label-dias">Días</td><td></td>
-              <td id="label-horas">Horas</td><td></td>
-              <td id="label-minutos">Minutos</td><td></td>
-              <td id="label-segundos">Segundos</td>
-            </tr>
-          </table>
-        </div>
+<!-- Cuenta regresiva -->
+<!-- Cuenta regresiva -->
+<div class=" w-fulld:w-auto mx-1 md:mt-0 md:flex md:items-center md:justify-center">
+  <!-- Oculto en móviles -->
+  <div class="hidden md:block">
+    <table class="text-center font-semibold text-sm md:text-base text-[#ffcc00]">
+      <tr class="text-xl md:text-2xl">
+        <td id="dias">00</td>
+        <td class="px-2">|</td>
+        <td id="horas">00</td>
+        <td class="px-2">|</td>
+        <td id="minutos">00</td>
+        <td class="px-2">|</td>
+        <td id="segundos">00</td>
+      </tr>
+      <tr class="text-xs md:text-sm font-normal">
+        <td id="label-dias">Días</td><td></td>
+        <td id="label-horas">Horas</td><td></td>
+        <td id="label-minutos">Minutos</td><td></td>
+        <td id="label-segundos">Segundos</td>
+      </tr>
+    </table>
+  </div>
+</div>
 
         <!-- Botones de idioma -->
         <div class="flex items-center space-x-4 mt-2 md:mt-0 md:ml-4">
@@ -71,43 +76,75 @@
         </div>
       </div>
     </nav>
+
+  <!-- Menú móvil sin contador -->
+  <div id="mobileMenuContent" class="hidden md:hidden bg-[#212834] text-white px-4 py-2 mt-2 ml-4 mr-5 rounded-b-2xl">
+    <a id="nav-about-m" href="about.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
+      <span class="ml-2">Historia</span>
+    </a>
+    <a id="nav-rules-m" href="regulations.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
+      <span class="ml-2">Reglamentos</span>
+    </a>
+    <a id="nav-schedule-m" href="schedule.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
+      <span class="ml-2">Cronograma</span>
+    </a>
+    <a id="nav-prizes-m" href="prizes.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
+      <span class="ml-2">Premios</span>
+    </a>
+    <a id="nav-register-m" href="register.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
+      <span class="ml-2">Registro</span>
+    </a>
+    <a id="nav-invit-m" href="invitations.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a]">
+      <span class="ml-2">Invitaciones</span>
+    </a>
+  </div>
+
   </header>
+
 
   <!-- Scripts necesarios -->
   <script src="js/language.js"></script>
   <script src="js/buttons.js"></script>
 
-  <!-- Script del contador -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const fechaEvento = new Date("August 1, 2025 23:59:00 GMT-0500").getTime();
+  <!-- Script del contador actualizado -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // 1. Configuración de la fecha objetivo
+    const fechaEvento = new Date("August 1, 2025 23:59:00 GMT-0500").getTime();
+    
+    // 2. Función principal de actualización
+    function actualizarContadorPC() {
+      const ahora = new Date().getTime();
+      const diferencia = fechaEvento - ahora;
 
-      function actualizarCuentaRegresiva() {
-        const ahora = new Date().getTime();
-        const diferencia = fechaEvento - ahora;
-
-        if (diferencia <= 0) {
-          document.getElementById("dias").innerText = "00";
-          document.getElementById("horas").innerText = "00";
-          document.getElementById("minutos").innerText = "00";
-          document.getElementById("segundos").innerText = "00";
-          return;
-        }
-
-        const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-        const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-        const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-
-        document.getElementById("dias").innerText = String(dias).padStart(2, '0');
-        document.getElementById("horas").innerText = String(horas).padStart(2, '0');
-        document.getElementById("minutos").innerText = String(minutos).padStart(2, '0');
-        document.getElementById("segundos").innerText = String(segundos).padStart(2, '0');
+      // 3. Si el evento ya pasó
+      if (diferencia <= 0) {
+        document.getElementById("dias").textContent = "00";
+        document.getElementById("horas").textContent = "00";
+        document.getElementById("minutos").textContent = "00";
+        document.getElementById("segundos").textContent = "00";
+        return;
       }
 
-      actualizarCuentaRegresiva();
-      setInterval(actualizarCuentaRegresiva, 1000);
-    });
-  </script>
+      // 4. Cálculos del tiempo restante
+      const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+      // 5. Actualización de los elementos
+      document.getElementById("dias").textContent = String(dias).padStart(2, '0');
+      document.getElementById("horas").textContent = String(horas).padStart(2, '0');
+      document.getElementById("minutos").textContent = String(minutos).padStart(2, '0');
+      document.getElementById("segundos").textContent = String(segundos).padStart(2, '0');
+    }
+
+    // 6. Iniciar el contador
+    actualizarContadorPC();
+    setInterval(actualizarContadorPC, 1000);
+  });
+</script>
+
+
 </body>
 </html>
