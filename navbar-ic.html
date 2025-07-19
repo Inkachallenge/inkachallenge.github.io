@@ -1,103 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="preferredLanguage">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Estilos básicos de respaldo */
-        #mobileMenu {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-        #mobileMenu.open {
-            max-height: 500px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: white;
+    }
+    #mobileMenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    #mobileMenu.open {
+      max-height: 500px;
+    }
+  </style>
 </head>
 
-
 <body>
-  <!-- Header con navbar fijo -->
+  <!-- Navbar -->
   <header class="fixed top-0 left-0 right-0 z-50">
-    
     <nav class="bg-[#212834] px-3 py-2 shadow-lg text-xl mx-4 mt-2 rounded-2xl h-[60px] md:h-auto">
       <div class="flex items-center justify-between w-full">
         <div class="flex items-center space-x-4">
-          <a href="index.html"><img src="images/inkachallenge-logo.png" alt="Logo" class="h-10 md:h-20"></a>
-          
+          <a href="index.html">
+            <img src="images/inkachallenge-logo.png" alt="Logo" class="h-10 md:h-20" />
+          </a>
           <button id="hamburgerBtn" class="md:hidden text-2xl text-white" onclick="toggleMenu()">☰</button>
-          
-          <!-- Menú desktop -->
-          <div class="hidden md:flex items-center space-x-8">
-            <a id="nav-about" href="about.html" class="text-white hover:text-[#fab41a] transition">
-              <span>History</span>
-            </a>
-            <a id="nav-rules" href="regulations.html" class="text-white hover:text-[#fab41a] transition">
-              <span>Regulations</span> </a>
-              <a id="nav-schedule" href="schedule.html" class="text-white hover:text-[#fab41a] transition">
-              <span>Schedule</span>
-            </a>
-            <a id="nav-prizes" href="prizes.html" class="text-white hover:text-[#fab41a] transition">
-              <span>Prizes</span>
-            </a>
-            <a id="nav-register" href="register.html" class="text-white hover:text-[#fab41a] transition">
-                <span>Register</span>       
-              </a>
-            <a id="nav-invit" href="invitations.html" class="text-white hover:text-[#fab41a] transition">
-                <span>Invitations</span>
-            </a>
-            
-                     
-            
-            
-            
-          </div>
         </div>
-        
+
+        <!-- Menú desktop con IDs y spans -->
+        <div class="hidden md:flex items-center space-x-4">
+          <a id="nav-about" href="about.html" class="text-white hover:text-[#fab41a] transition"><span>History</span></a>
+          <a id="nav-rules" href="regulations.html" class="text-white hover:text-[#fab41a] transition"><span>Regulations</span></a>
+          <a id="nav-schedule" href="schedule.html" class="text-white hover:text-[#fab41a] transition"><span>Schedule</span></a>
+          <a id="nav-prizes" href="prizes.html" class="text-white hover:text-[#fab41a] transition"><span>Prizes</span></a>
+          <a id="nav-register" href="register.html" class="text-white hover:text-[#fab41a] transition"><span>Register</span></a>
+          <a id="nav-invit" href="invitations.html" class="text-white hover:text-[#fab41a] transition"><span>Invitations</span></a>
+          <a id="nav-inscdeadline" class="text-white hover:text-[#fab41a] transition"><span>Cierre de inscripciones</span></a>
+        </div>
+
+        <!-- Cuenta regresiva -->
+        <div class="mt-2 md:mt-0 flex items-center justify-center w-full md:w-auto text-[#ffcc00]">
+          <table class="text-center font-semibold text-sm md:text-base text-[#ffcc00]">
+            <tr class="text-xl md:text-2xl">
+              <td id="dias">00</td>
+              <td class="px-2">|</td>
+              <td id="horas">00</td>
+              <td class="px-2">|</td>
+              <td id="minutos">00</td>
+              <td class="px-2">|</td>
+              <td id="segundos">00</td>
+            </tr>
+            <tr class="text-xs md:text-sm font-normal">
+              <td id="label-dias">Días</td><td></td>
+              <td id="label-horas">Horas</td><td></td>
+              <td id="label-minutos">Minutos</td><td></td>
+              <td id="label-segundos">Segundos</td>
+            </tr>
+          </table>
+        </div>
+
         <!-- Botones de idioma -->
-        <div class="flex items-center space-x-4 ml-auto">
-          <img id="btn-es" src="images/icons/es-off.png" alt="Español" class="h-7 cursor-pointer" onclick="changeLanguage('es')"/>
-          <img id="btn-en" src="images/icons/en-on.png" alt="Inglés" class="h-7 cursor-pointer" onclick="changeLanguage('en')"/>
+        <div class="flex items-center space-x-4 mt-2 md:mt-0 md:ml-4">
+          <img id="btn-es" src="images/icons/es-off.png" alt="Español" class="h-7 cursor-pointer" onclick="changeLanguage('es')" />
+          <img id="btn-en" src="images/icons/en-on.png" alt="Inglés" class="h-7 cursor-pointer" onclick="changeLanguage('en')" />
         </div>
       </div>
     </nav>
-
-    <!-- Menú móvil - Versión con elementos apilados -->
-<div id="mobileMenuContent" class="hidden md:hidden bg-[#212834] text-white px-4 py-2 mt-2 ml-4 mr-5 rounded-b-2xl">
-  
-  <!-- Cada elemento en bloque completo -->
-  <a id="nav-about-m" href="about.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
-    <span class="ml-2">History</span>
-  </a>
-  <a id="nav-rules-m" href="regulations.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
-    <span class="ml-2">Regulations</span>
-  </a>
-  <a id="nav-schedule-m" href="schedule.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
-    <span class="ml-2">Schedule</span>
-  </a>
-  <a id="nav-prizes-m" href="prizes.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
-    <span class="ml-2">Prizes</span>
-  </a>
-  <a id="nav-register-m" href="register.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a] border-b border-[#3a4a7b]">
-    <span class="ml-2">Register</span>
-  </a>
-  <a id="nav-invit-m" href="invitations.html" class="block w-full py-3 hover:bg-[#2a3a6b] hover:text-[#fab41a]">
-    <span class="ml-2">Invitations</span>
-  </a>
-  
-  
-  
-</div>
-
-
   </header>
-<script src="js/language.js"></script>
-<script src="js/buttons.js"></script>
 
+  <!-- Scripts necesarios -->
+  <script src="js/language.js"></script>
+  <script src="js/buttons.js"></script>
 
+  <!-- Script del contador -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const fechaEvento = new Date("August 1, 2025 23:59:00 GMT-0500").getTime();
+
+      function actualizarCuentaRegresiva() {
+        const ahora = new Date().getTime();
+        const diferencia = fechaEvento - ahora;
+
+        if (diferencia <= 0) {
+          document.getElementById("dias").innerText = "00";
+          document.getElementById("horas").innerText = "00";
+          document.getElementById("minutos").innerText = "00";
+          document.getElementById("segundos").innerText = "00";
+          return;
+        }
+
+        const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+        document.getElementById("dias").innerText = String(dias).padStart(2, '0');
+        document.getElementById("horas").innerText = String(horas).padStart(2, '0');
+        document.getElementById("minutos").innerText = String(minutos).padStart(2, '0');
+        document.getElementById("segundos").innerText = String(segundos).padStart(2, '0');
+      }
+
+      actualizarCuentaRegresiva();
+      setInterval(actualizarCuentaRegresiva, 1000);
+    });
+  </script>
+</body>
 </html>
-
