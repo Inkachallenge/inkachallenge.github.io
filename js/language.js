@@ -583,7 +583,7 @@ const translations = {
     <!-- Versión PC: PDF embebido -->
     <div class="hidden md:block overflow-auto" style="max-height: 50vh;">
       <embed 
-        src="regulations/Seguidor de Linea Natcar - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" 
+        src="regulations/Seguidor de Linea NatCar - Reglamento Oficial IV InkaChallege Edición Coneimera.pdf" 
         width="100%" 
         height="500"
         type="application/pdf"
